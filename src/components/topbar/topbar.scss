@@ -1,0 +1,54 @@
+.topbar{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 20;
+    
+
+    .addresBar{ 
+        width: 600px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        z-index: 20;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 13px;
+                color: black;
+
+                &:nth-child(1) {
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+
+    .icons{
+        display: flex;
+        width: 600px;
+        justify-content: end;
+        align-items: center;
+        z-index: 20;
+
+        ul{
+            display: flex;
+
+            li{
+                display: flex;
+                margin: 0 15px;
+            }
+        }
+    }
+}
