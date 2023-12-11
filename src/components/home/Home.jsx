@@ -1,9 +1,11 @@
 import "./home.scss"
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import AOS from "aos";
 import 'aos/dist/aos.css';
 
 const Home = () => {
+
+  const [currentState, setCurrentState] = useState(0)
 
   const homeImages = [
     {
@@ -16,13 +18,24 @@ const Home = () => {
     },
     {
       id: 3,
-      img: "../../src/assets/working-done.png"
+      img: "../../src/assets/working-done.webp"
     },
     {
       id: 4,
       img: "../../src/assets/customer-service.jpg"
     }
   ]
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if(currentState === 3) {
+        setCurrentState(0)
+      } else {
+        setCurrentState(currentState + 1)
+      }
+    }, 5000)
+    return () => clearTimeout(timer)
+  }, [currentState])
 
   useEffect(() => {
     AOS.init({duration: 2000})
@@ -39,7 +52,16 @@ const Home = () => {
   return (
     <div className="home">
       <div className="contHome">
-        <img src="../../src/assets/working.png"/>
+        {homeImages.map((image,index) => (
+          <img
+            key={index}
+            className={`homeImg ${index === currentState ? 'active' : ''}`}
+            src={image.img}
+            alt="yeminli mali müşsavir, ymm, ymm ankara, müşavir, musavir"
+            style={{ opacity: index === currentState ? 0.5 : 0 }}
+          />
+        ))}
+        
       </div>
       <div className="contHome1">
         <img style={{zIndex: "-1"}} src="../../src/assets/foto.jpg" alt="yeminli mali müşsavir, ymm, ymm ankara, müşavir, musavir" />
