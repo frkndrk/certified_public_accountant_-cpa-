@@ -1,5 +1,6 @@
 import "./home.scss"
 import React, { useEffect, useState } from 'react'
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 const Home = () => {
 
@@ -8,19 +9,34 @@ const Home = () => {
   const homeImages = [
     {
       id: 1,
-      img: "../../src/assets/plaza1.webp"
+      img: "../../src/assets/plaza1.webp",
+      descH2: "MusEn YMM",
+      descH1: "2023 Sirküler",
+      desc1: "DAHA FAZLASI İÇİN" 
     },
     {
       id: 2,
-      img: "../../src/assets/working.png"
+      img: "../../src/assets/working.png",
+      descH2: "MusEn YMM",
+      descH1: "Denetim Tasdik",
+      desc1: "TEKLİF AL",
+      desc2: "HIZLI İLETİŞİM"
     },
     {
       id: 3,
-      img: "../../src/assets/working-done.webp"
+      img: "../../src/assets/working-done.webp",
+      descH2: "MusEn YMM",
+      descH1: "Mali Müşavirlik",
+      desc1: "TEKLİF AL",
+      desc2: "HIZLI İLETİŞİM"
     },
     {
       id: 4,
-      img: "../../src/assets/customer-service.jpg"
+      img: "../../src/assets/customer-service.jpg",
+      descH2: "MusEn YMM",
+      descH1: "Danışmanlık Hizmeti",
+      desc1: "TEKLİF AL",
+      desc2: "HIZLI İLETİŞİM"
     }
   ]
 
@@ -35,37 +51,78 @@ const Home = () => {
     return () => clearTimeout(timer)
   }, [currentState])
   
-  
-  const bgImage = {
-    backgroundImage: `url(../../src/assets/plaza1.webp)`,
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    width: "100vw",
-    height: "100vh",
-
+  const clickArrowLeft = () => {
+    if(currentState === 0) {
+      setCurrentState(3)
+    } else {
+      setCurrentState(currentState - 1)
+    }
   }
+  
+  const clickArrowRight = () => {
+    if(currentState === 3) {
+      setCurrentState(0)
+    } else {
+      setCurrentState(currentState + 1)
+    }
+  }
+
   return (
     <div className="home">
       <div className="contHome">
         {homeImages.map((image,index) => (
           <img
             key={index}
-            className={`homeImg ${index === currentState ? 'active' : ''}`}
+            className="homeImg"
             src={image.img}
             alt="yeminli mali müşsavir, ymm, ymm ankara, müşavir, musavir"
             style={{ opacity: index === currentState ? 0.5 : 0 }}
           />
         ))}
-        
       </div>
       <div className="contHome1">
-        <img style={{zIndex: "-1"}} src="../../src/assets/foto.jpg" alt="yeminli mali müşsavir, ymm, ymm ankara, müşavir, musavir" />
-        <div className="header">
-          <h2>MusEn YMM</h2>
-          <h1>2023 Sirküler</h1>
-        </div>
+        {homeImages.map((item, index) => (
+          <div className="header"
+            key={index}
+            style={{opacity: index === currentState ? 1 : 0}}>
+            <h2>{item.descH2}</h2>
+            <h1>{item.descH1}</h1>
+            {homeImages.map((item, index) => (
+              <div key={index} className="buttons" style={{position: "absolute"}}>
+                <button style={{opacity: index === currentState ? 1 : 0}}>{item.desc1}</button>
+                <button style={{opacity: index === currentState ? 1 : 0, display: !item.desc2 && "none"}}>{item.desc2}</button>
+              </div>  
+            ))}
+          </div>
+        ))}
         <div className="shape" /* style={{backgroundImage: `url("../../src/assets/foto.jpg")`, backgroundSize: "cover"}} */>
         </div>
+      </div>
+      <div className="shape2">
+        <img className="shapeImg" src="../../src/assets/shape.png" alt="" />
+      </div>
+      {/* <div className="dots">
+        <div className="dot">
+          <div className="dot-out"></div>
+        </div>
+        <div className="dot">
+          <div className="dot-out"></div>
+        </div>
+        <div className="dot">
+          <div className="dot-out"></div>
+        </div>
+        <div className="dot">
+          <div className="dot-out"></div>
+        </div>
+      </div> */}
+      <div className="arrows">
+        <button onClick={clickArrowLeft} className="left"><ArrowBackIosNewIcon /></button>
+        <button onClick={clickArrowRight} className="right"><ArrowBackIosNewIcon /></button>
+      </div>
+      <div className="lines">
+        <div className="line-1"></div>
+        <div className="line-2"></div>
+        <div className="line-3"></div>
       </div>
     </div>
   )
