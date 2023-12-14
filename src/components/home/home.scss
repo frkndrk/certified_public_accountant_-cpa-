@@ -47,13 +47,13 @@
             transition: opacity 2s ease-in-out;
     
             h2{
-                font-size: 40px;
+                font-size: 50px;
                 color: rgb(255, 255, 255);
                 font-weight: 600;
                 
             }
             h1{
-                font-size: 50px;
+                font-size: 80px;
                 color: rgb(255, 255, 255);
                 border-bottom: 1px solid rgb(255, 255, 255);
             }
@@ -70,7 +70,7 @@
                     padding: 15px 20px;
                     border: none;
                     transition: all 2s ease;
-
+                    font-size: 16px;
                 }
             }
         }
@@ -236,6 +236,82 @@
         }
 
         .line-3{
+            width: 500px;
+            height: 0px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            margin: 50px 0;
+            border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+            animation: lines2 10s infinite;
+
+            @keyframes lines2 {
+                0%{
+                    transform: translateX(-1000px);
+                }
+                50%{
+                    transform: translateX(1000px);
+                }
+                100%{
+                    transform: translateX(-1000px);
+                }           
+            }
+        }
+    }
+
+    .lines2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 50px;
+        right: 100px;
+        width: 1000px; 
+        transform: rotate(0deg);
+        
+
+        .line-1a{
+            width: 500px;
+            height: 0px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            margin: 50px 0;
+            border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%;
+            animation: lines 10s infinite;
+
+            @keyframes lines {
+                0%{
+                    transform: translateX(-1000px);
+                }
+                50%{
+                    transform: translateX(1000px);
+                }
+                100%{
+                    transform: translateX(-1000px);
+                }          
+            }
+        }
+
+        .line-2a{
+            width: 500px;
+            height: 0px;
+            border: 5px solid rgba(18, 18, 18, 0.3);
+            margin: 50px 0;
+            border-radius: 0% 100% 0% 100% / 0% 100% 0% 100% ;
+            animation: lines1 10s infinite;
+
+            @keyframes lines1 {
+                0%{
+                    transform: translateX(1000px);
+                }
+                50%{
+                    transform: translateX(-1000px);
+                }
+                100%{
+                    transform: translateX(1000px);
+                }           
+            }
+        }
+
+        .line-3a{
             width: 500px;
             height: 0px;
             border: 5px solid rgba(255, 255, 255, 0.3);
