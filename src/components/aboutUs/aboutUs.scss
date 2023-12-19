@@ -1,11 +1,11 @@
 .aboutUs{
-    width: 100vw;
-    height: 100vh;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
 
     .contHeader{
         width: 80%;
@@ -13,45 +13,107 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 100px;
     }
 
-    .contCards{
+    .container{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
         width: 80%;
-        position: relative;
-        background-color: #ffffff;
+        height: 50vh;
+        min-height: 500px;
 
-        .contImg{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 350px;
-            height: 400px;
-            img{
-                width: 350px;
-                height: 250px;
-                object-fit: cover;
-            }
-        }
-
-        .contName{
-            position: absolute;
-            bottom: 100px;
-            background-color: #fff;
-            width: 80%;
-            height: 100px;
+        .slider{
             display: flex;
-            justify-content: start;
-            align-items: center;
-            box-shadow: 0 5px 10px 1px #ebe9e9;
+            overflow: hidden;
 
-            h3{
-                padding-left: 20px;
+            .contCards{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 350px;
+                height: 300px;
+                position: relative;
+                background-color: #ffffff;
+                margin: 10px;
+                transition: all 1s ease-out;
+        
+                .card{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    width: 350px;
+        
+                    .contImg{
+                        width: 350px;
+                        height: 250px;
+        
+                        img{
+                            width: 350px;
+                            height: 250px;
+                            object-fit: cover;
+                        }
+                    }
+            
+                    .contName{
+                        background-color: #fff;
+                        width: 80%;
+                        height: 100px;
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        box-shadow: 0 5px 10px 1px #ebe9e9;
+                        margin-top: -60px;
+                        h3{
+                            padding-left: 20px;
+                            font-size: 25px;
+                        }
+                    }
+                }
+        
+                
             }
+
         }
+
+        
+
+        .leftArrow{
+            position: absolute;
+            top: 370px;
+            left: 50px;
+            color: black;
+            width: 30px;
+            height: 30px;
+            border: none;
+            border-radius: 50%;
+            background-color: #aaa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .rightArrow{
+            position: absolute;
+            top: 370px;
+            right: 50px;
+            color: black;
+            width: 30px;
+            height: 30px;
+            border: none;
+            border-radius: 50%;
+            background-color: #aaa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+
     }
+
+    
 }
