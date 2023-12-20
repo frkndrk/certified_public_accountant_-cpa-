@@ -115,5 +115,83 @@
 
     }
 
+    .toCustomer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 70vh;
+        margin: 100px 0;
+
+        .description{
+            flex: 1;
+
+            .desc1{
+
+            }
+        }
+
+        .descImg{
+            flex: 1;
+            /* background-image: url(../../src/assets/handShake3.webp);
+            height: 110%;
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            position: relative;
+            z-index: 100; */
+            position: relative;
+            
+            
+
+            .desc2{
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
+                border-radius: 50%;
+                position: relative;
+                z-index: 10;
+                opacity: 0.6;
+            }
+
+            .desc3{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                z-index: 5;
+                box-shadow: 0 0 10px 5px rgb(185, 183, 183);
+            }
+
+            .desc4{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50%;
+                height: 50%;
+                transform: rotate(180deg);
+                z-index: 4;
+                opacity: 0.1;
+                animation: go 5s infinite;
+
+                @keyframes go {
+                    0%{
+                        transform: translateY(20px) translateX(-20px) rotate(180deg);
+                    }
+                    50%{
+                        transform: translateY(0px) translateX(0px) rotate(180deg);
+                    }
+                    100% {
+                        transform: translateY(20px) translateX(-20px) rotate(180deg);
+                    }
+                    
+                }
+            }
+
+            
+        }
+    }
     
 }

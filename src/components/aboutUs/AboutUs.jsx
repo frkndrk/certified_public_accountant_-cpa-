@@ -1,26 +1,21 @@
 import "./aboutUs.scss"
 import React, { useEffect, useState } from 'react'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import AlignVerticalTopIcon from '@mui/icons-material/AlignVerticalTop';
 
 const AboutUs = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0)
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      const scrollDown = () => {
-        if(window.scrollY >= 200) {
-          if(currentSlide === 5) {
+        const timer = setTimeout(() => {
+          if(currentSlide === 6) {
             setCurrentSlide(0)
           } else {
             setCurrentSlide(currentSlide + 1)
           }
-        }
-      }
-      window.addEventListener("scroll", scrollDown)
-    }, 5000)
-    return () => clearTimeout(timer)
-    
+        }, 5000)
+        return () => clearTimeout(timer)
   }, [currentSlide])
   
   const handleClick = (way) => {
@@ -80,6 +75,7 @@ const AboutUs = () => {
   return (
     <div className='aboutUs'>
       <div className="contHeader">
+        <span><AlignVerticalTopIcon /></span>
         <h2>MusEn YMM</h2>
         <h1>Hizmet Alanlarımız</h1>
       </div>
@@ -100,6 +96,16 @@ const AboutUs = () => {
         </div>
         <div className="leftArrow" onClick={() => handleClick("left")}><ArrowBackIosNewIcon /></div>
         <div className="rightArrow" onClick={() => handleClick()} style={{transform: "rotate(180deg)", zIndex: "40"}}><ArrowBackIosNewIcon /></div>
+      </div>
+      <div className="toCustomer">
+        <div className="description">
+          <p className="desc1">Dürüstlük ve güveni ilke edinen şirketimizin amacı; kurumsallaşma yolunda, ulusal ve uluslararası meslek etiğine bağlı, sürekli kendini yenileme ve yaşam boyu öğrenmenin gerekliliğine olan inançla müşterilerimizin ihtiyaçlarına en uygun profesyonel çözümleri zamanında sunmak ve müşterilerimizin çalışmalarına değer katmaktır.<br/>BERUSSA, yerli ve yabancı bireysel ve kurumsal tüm müşterilere vergi, muhasebe, mali hukuk ve finansal alanlarda denetim ve danışmanlık hizmeti sunmaktadır.</p>
+        </div>
+        <div className="descImg">
+          <img className="desc2" src="../../src/assets/shape1.png" alt="" />
+          <img className="desc3" src="../../src/assets/handShake4.jpeg" alt="" />
+          <img className="desc4" src="../../src/assets/polkadots.png" alt="" />
+        </div>
       </div>
     </div>
   )
