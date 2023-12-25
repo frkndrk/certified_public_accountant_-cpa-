@@ -1,3 +1,54 @@
 .servicesPage{
-    margin-top: 100px;
+    overflow: hidden;
+
+    .imgCont{
+        width: 100vw;
+        height: 70vh;
+        background-color: #000000;
+        position: relative;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+            animation: img 10s 1;
+
+            @keyframes img {
+                0%{
+                    transform: scale(1);
+                }
+                50%{
+                    transform: scale(1.2);
+                }
+                100%{
+                    transform: scale(1);
+                }
+                
+            }
+        }
+
+        .textServ{
+            position: absolute;
+            top: 50%;
+
+            h1{
+                font-size: 60px;
+                color: #d9d8d8; 
+                letter-spacing: 2px;
+                width: 100vw;
+                text-align: center;
+            }
+
+            h2{
+                font-size: 20px;
+                color: #d9d8d8; 
+                letter-spacing: 2px;
+                width: 100vw;
+                text-align: center;
+            }
+        }
+        
+    }
 }

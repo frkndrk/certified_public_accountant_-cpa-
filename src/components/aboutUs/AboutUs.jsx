@@ -103,9 +103,9 @@ const AboutUs = () => {
         <div className="description">
           <div className="descCont">
             <h1>Sizlere Hizmet Vermekten Mutluluk Duyuyoruz</h1>
-            <p className="desc1">Dürüstlük ve güveni ilke edinen şirketimizin amacı; kurumsallaşma yolunda, ulusal ve uluslararası meslek etiğine bağlı, sürekli kendini yenileme ve yaşam boyu öğrenmenin gerekliliğine olan inançla müşterilerimizin ihtiyaçlarına en uygun profesyonel çözümleri zamanında sunmak ve müşterilerimizin çalışmalarına değer katmaktır.<br/>BERUSSA, yerli ve yabancı bireysel ve kurumsal tüm müşterilere vergi, muhasebe, mali hukuk ve finansal alanlarda denetim ve danışmanlık hizmeti sunmaktadır.</p>
+            <p className="desc1">Dürüstlük ve güveni ilke edinen şirketimizin amacı; kurumsallaşma yolunda, ulusal ve uluslararası meslek etiğine bağlı, sürekli kendini yenileme ve yaşam boyu öğrenmenin gerekliliğine olan inançla müşterilerimizin ihtiyaçlarına en uygun profesyonel çözümleri zamanında sunmak ve müşterilerimizin çalışmalarına değer katmaktır.<br/>MusEn, yerli ve yabancı bireysel ve kurumsal tüm müşterilere vergi, muhasebe, mali hukuk ve finansal alanlarda denetim ve danışmanlık hizmeti sunmaktadır.</p>
             <div className="cont1">
-              <button>DEVAMI İÇİN</button>
+              <button><Link to="/Kurumsal">DEVAMI İÇİN</Link></button>
               <div className="contact">
                 <ul>
                   <li><CallIcon style={{backgroundColor: "#aaa", color: "white", borderRadius: "50%", padding: "15px"}} /></li>

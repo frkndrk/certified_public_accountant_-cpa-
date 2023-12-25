@@ -99,7 +99,7 @@ const Home = () => {
         </div>
       </div>
       <div className="shape2">
-        <img className="shapeImg" src="../../src/assets/dots2.png" alt="" />
+        <img className="shapeImg" src="../../src/assets/shape.png" alt="" />
       </div>
       {/* <div className="dots">
         <div className="dot">

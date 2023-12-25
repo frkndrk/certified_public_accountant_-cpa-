@@ -31,7 +31,7 @@ const Navbar = () => {
             <li className={navbar ? "menuLi fontColor" : "menuLi"}><Link className="link" to="/Anasayfa">Anasayfa</Link></li>
             <li className={navbar ? "menuLi fontColor" : "menuLi"} style={{display: "flex", position: "relative"}}><Link className="link" to="/Kurumsal">Kurumsal</Link><KeyboardArrowDownIcon />
               <ul style={{position: "absolute", top: "100px", left: "0", listStyle: "none", textDecoration: "none", backgroundColor: "#fff", borderRadius: "5px", padding: "10px"}}>
-                <li style={{margin: "10px 20px", borderBottom: "1px solid #aaa", paddingBottom: "15px", color: "rgba(59, 59, 61, 0.8)"}}><Link className="link" to="/Hakkimizda">Hakkımızda</Link></li>
+                <li style={{margin: "10px 20px", borderBottom: "1px solid #aaa", paddingBottom: "15px", color: "rgba(59, 59, 61, 0.8)"}}><Link className="link" to="/Kurumsal">Hakkımızda</Link></li>
                 <li style={{margin: "10px 20px", color: "rgba(59, 59, 61, 0.8)"}}><Link className="link" to="/Ortaklarimiz">Ortaklarımız</Link></li>
               </ul>
             </li>

@@ -6,6 +6,8 @@ import { Routes, Route, useLocation } from "react-router-dom"
 import HomePage from "./pages/homePage/HomePage"
 import ServicesPage from "./pages/servicesPage/ServicesPage"
 import { useEffect } from 'react'
+import OfficalPage from './pages/officalPage/OfficalPage'
+import PartnersPage from './pages/partnersPage/PartnersPage'
 
 function App() {
 
@@ -28,6 +30,8 @@ function App() {
           <Route path="/Anasayfa" element={<HomePage />}/>
         </Route>
         <Route path="/Hizmetlerimiz" element={<ServicesPage />}/>
+        <Route path="/Kurumsal" element={<OfficalPage />}/>
+        <Route path="/Ortaklarimiz" element={<PartnersPage />}/>
       </Routes>
       <Footer />
     </div>
