@@ -8,6 +8,8 @@ import ServicesPage from "./pages/servicesPage/ServicesPage"
 import { useEffect } from 'react'
 import OfficalPage from './pages/officalPage/OfficalPage'
 import PartnersPage from './pages/partnersPage/PartnersPage'
+import ContactPage from './pages/contactPage/ContactPage'
+import ServicePage from './pages/servicePage/ServicePage'
 
 function App() {
 
@@ -32,6 +34,10 @@ function App() {
         <Route path="/Hizmetlerimiz" element={<ServicesPage />}/>
         <Route path="/Kurumsal" element={<OfficalPage />}/>
         <Route path="/Ortaklarimiz" element={<PartnersPage />}/>
+        <Route path="/Iletisim" element={<ContactPage />}/>
+        <Route path="/Hizmetler" element={<ServicePage />}>
+          <Route path=":ServiceId" element={<ServicePage />} />
+        </Route>
       </Routes>
       <Footer />
     </div>
