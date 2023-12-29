@@ -36,7 +36,7 @@ function App() {
         <Route path="/Ortaklarimiz" element={<PartnersPage />}/>
         <Route path="/Iletisim" element={<ContactPage />}/>
         <Route path="/Hizmetler" element={<ServicePage />}>
-          <Route path=":ServiceId" element={<ServicePage />} />
+          <Route path=":serviceId" element={<ServicePage />} />
         </Route>
       </Routes>
       <Footer />

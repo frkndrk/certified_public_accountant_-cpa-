@@ -8,10 +8,11 @@ import { Link } from "react-router-dom";
 const AboutUs = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0)
+  const [selectId, setSelectId] = useState(0)
 
   useEffect(() => {
         const timer = setTimeout(() => {
-          if(currentSlide === 6) {
+          if(currentSlide === 5) {
             setCurrentSlide(0)
           } else {
             setCurrentSlide(currentSlide + 1)
@@ -22,8 +23,8 @@ const AboutUs = () => {
   
   const handleClick = (way) => {
     way === "left"
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 6)
-      : setCurrentSlide(currentSlide < services.length - 4 ? currentSlide + 1 : 0)
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 5)
+      : setCurrentSlide(currentSlide < services.length - 3 ? currentSlide + 1 : 0)
   }
 
   const services = [
@@ -59,16 +60,11 @@ const AboutUs = () => {
     },
     {
       id: 7,
-      name: "Yönetsel Danışmanlık",
-      img: "../../src/assets/handShake2.avif"
-    },
-    {
-      id: 8,
       name: "Diğer Denetim İşlemleri",
       img: "../../src/assets/calculate2.jpg"
     },
     {
-      id: 9,
+      id: 8,
       name: "Diğer Tasdik İşlemleri",
       img: "../../src/assets/handShake3.webp"
     }
@@ -84,16 +80,18 @@ const AboutUs = () => {
       <div className="container">
         <div className="slider">
           {services.map((item) => (
-            <div key={item.id} className="contCards" style={{transform: `translateX(-${currentSlide * 370}px)`}}>
-              <div className="card">
-                <div className="contImg">
-                  <img src={item.img} alt=""/>
-                </div>
-                <div className="contName">
-                  <h3>{item.name}</h3>
+            <Link to={"/Hizmetler/" + `${item.id}`} style={{textDecoration: "none", color: "#000000"}}>
+              <div key={item.id} className="contCards" style={{transform: `translateX(-${currentSlide * 370}px)`}} onClick={() => setSelectId(item.id)}>
+                <div className="card">
+                  <div className="contImg">
+                    <img src={item.img} alt=""/>
+                  </div>
+                  <div className="contName">
+                    <h3>{item.name}</h3>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
         <div className="leftArrow" onClick={() => handleClick("left")}><ArrowBackIosNewIcon /></div>
@@ -105,7 +103,7 @@ const AboutUs = () => {
             <h1>Sizlere Hizmet Vermekten Mutluluk Duyuyoruz</h1>
             <p className="desc1">Dürüstlük ve güveni ilke edinen şirketimizin amacı; kurumsallaşma yolunda, ulusal ve uluslararası meslek etiğine bağlı, sürekli kendini yenileme ve yaşam boyu öğrenmenin gerekliliğine olan inançla müşterilerimizin ihtiyaçlarına en uygun profesyonel çözümleri zamanında sunmak ve müşterilerimizin çalışmalarına değer katmaktır.<br/>MusEn, yerli ve yabancı bireysel ve kurumsal tüm müşterilere vergi, muhasebe, mali hukuk ve finansal alanlarda denetim ve danışmanlık hizmeti sunmaktadır.</p>
             <div className="cont1">
-              <button><Link to="/Kurumsal">DEVAMI İÇİN</Link></button>
+            <Link to="/Kurumsal" style={{textDecoration: "none", color: "#fff"}}><button style={{cursor: "pointer", height: "60px"}}>DEVAMI İÇİN</button></Link>
               <div className="contact">
                 <ul>
                   <li><CallIcon style={{backgroundColor: "#aaa", color: "white", borderRadius: "50%", padding: "15px"}} /></li>

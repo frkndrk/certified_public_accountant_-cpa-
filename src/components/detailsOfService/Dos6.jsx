@@ -1,6 +1,6 @@
 import { useState } from "react"
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import "../dos.scss"
+import "./dos.scss"
 
 const Dos6 = () => {
     const [state, setState] = useState(false)

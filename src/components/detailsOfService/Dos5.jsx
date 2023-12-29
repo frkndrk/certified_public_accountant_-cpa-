@@ -1,4 +1,4 @@
-import "../dos.scss"
+import "./dos.scss"
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import { useState } from "react";
 

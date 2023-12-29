@@ -2,16 +2,54 @@ import { useEffect, useState } from "react"
 import "./servicePage.scss"
 import CallIcon from '@mui/icons-material/Call'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import  Dos1  from "../../components/detailsOfService/dos1/Dos1";
-import Dos2 from "../../components/detailsOfService/dos2/Dos2";
-import Dos3 from "../../components/detailsOfService/dos3/Dos3";
-import Dos4 from "../../components/detailsOfService/dos4/Dos4";
-import Dos5 from "../../components/detailsOfService/dos5/Dos5";
-import Dos6 from "../../components/detailsOfService/dos6/Dos6";
-import Dos7 from "../../components/detailsOfService/dos7/Dos7";
-import Dos8 from "../../components/detailsOfService/dos8/Dos8";
+import Dos1 from "../../components/detailsOfService/Dos1";
+import Dos2 from "../../components/detailsOfService/Dos2";
+import Dos3 from "../../components/detailsOfService/Dos3";
+import Dos4 from "../../components/detailsOfService/Dos4";
+import Dos5 from "../../components/detailsOfService/Dos5";
+import Dos6 from "../../components/detailsOfService/Dos6";
+import Dos7 from "../../components/detailsOfService/Dos7";
+import Dos8 from "../../components/detailsOfService/Dos8";
+import { Link, useParams } from "react-router-dom";
 
 const ServicePage = () => {
+
+  const dosAll = [
+    {
+      id: 1,
+      compDos: <Dos1 />
+    },
+    {
+      id: 2,
+      compDos: <Dos2 />
+    },
+    {
+      id: 3,
+      compDos: <Dos3 />
+    },
+    {
+      id: 4,
+      compDos: <Dos4 />
+    },
+    {
+      id: 5,
+      compDos: <Dos5 />
+    },
+    {
+      id: 6,
+      compDos: <Dos6 />
+    },
+    {
+      id: 7,
+      compDos: <Dos7 />
+    },
+    {
+      id: 8,
+      compDos: <Dos8 />
+    }
+  ]
+
+  const {serviceId} = useParams();
 
     const services = [
         {
@@ -124,7 +162,7 @@ const ServicePage = () => {
         <div className="imgContB1">
           <img src="../../src/assets/plaza3.webp" alt="" />
           <div className='textOff'>
-            <h1>Hizmetler</h1>
+            <h1>{services[serviceId - 1].name}</h1>
             <h2>Sizlere Hizmet Vermekten Mutluluk Duyuyoruz</h2>
           </div>
         </div>
@@ -133,7 +171,7 @@ const ServicePage = () => {
                 <div className="cs1A">
                     <ul>
                         {services.map((item, index) => (
-                            <li key={index}>{item.name}</li>
+                            <Link to={`${item.id}`} style={{textDecoration: "none"}}><li key={index}>{item.name}</li></Link>
                         ))}
                     </ul>
                 </div>
@@ -167,7 +205,7 @@ const ServicePage = () => {
                     </div>
                 </div>
                 <div className="cs2B">
-                    <Dos3 />
+                    {dosAll[serviceId - 1].compDos}
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import "../dos.scss"
+import "./dos.scss"
 
 const Dos8 = () => {
   return (
