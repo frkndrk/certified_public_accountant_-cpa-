@@ -1,6 +1,7 @@
 import "./home.scss"
 import React, { useEffect, useState } from 'react'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -9,23 +10,22 @@ const Home = () => {
   const homeImages = [
     {
       id: 1,
-      img: "../../src/assets/plaza1.webp",
-      descH2: "MusEn YMM",
-      descH1: "2023 Sirküler",
-      desc1: "DAHA FAZLASI İÇİN" 
+      img: "../../src/assets/plaza6.jpg",
+      descH2: "ENKA",
+      descH1: "Yeminli Mali Müşavirlik"
     },
     {
       id: 2,
       img: "../../src/assets/working.png",
-      descH2: "MusEn YMM",
+      descH2: "ENKA YMM",
       descH1: "Denetim Tasdik",
       desc1: "TEKLİF AL",
       desc2: "HIZLI İLETİŞİM"
     },
     {
       id: 3,
-      img: "../../src/assets/working-done.webp",
-      descH2: "MusEn YMM",
+      img: "../../src/assets/plaza5.jpg",
+      descH2: "ENKA YMM",
       descH1: "Mali Müşavirlik",
       desc1: "TEKLİF AL",
       desc2: "HIZLI İLETİŞİM"
@@ -33,7 +33,7 @@ const Home = () => {
     {
       id: 4,
       img: "../../src/assets/customer-service.jpg",
-      descH2: "MusEn YMM",
+      descH2: "ENKA YMM",
       descH1: "Danışmanlık Hizmeti",
       desc1: "TEKLİF AL",
       desc2: "HIZLI İLETİŞİM"
@@ -87,16 +87,14 @@ const Home = () => {
             style={{opacity: index === currentState ? 1 : 0}}>
             <h2>{item.descH2}</h2>
             <h1>{item.descH1}</h1>
-            {homeImages.map((item, index) => (
-              <div key={index} className="buttons" style={{position: "absolute"}}>
-                <button style={{opacity: index === currentState ? 1 : 0}}>{item.desc1}</button>
-                <button style={{opacity: index === currentState ? 1 : 0, display: !item.desc2 && "none"}}>{item.desc2}</button>
-              </div>  
-            ))}
           </div>
         ))}
-        <div className="shape" /* style={{backgroundImage: `url("../../src/assets/foto.jpg")`, backgroundSize: "cover"}} */>
-        </div>
+        {homeImages.map((item, index) => (
+          <div key={index} className="buttons">
+            <Link className="link lnk" to="/Teklif-Al"><button style={{opacity: index === currentState ? 1 : 0, display: !item.desc1 && "none"}}>{item.desc1}</button></Link>
+            <Link className="link lnk" to="/Iletisim"><button style={{opacity: index === currentState ? 1 : 0, display: !item.desc2 && "none"}}>{item.desc2}</button></Link>
+          </div>
+        ))}
       </div>
       <div className="shape2">
         <img className="shapeImg" src="../../src/assets/shape.png" alt="" />

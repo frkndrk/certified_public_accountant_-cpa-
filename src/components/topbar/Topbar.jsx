@@ -9,18 +9,20 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 const Topbar = () => {
   return (
     <div className="topbar">
-      <div className="addresBar">
-        <ul>
-          <li><LocationOnIcon fontSize="small" style={{marginRight: "5px"}}/> Mutlukent Mah. 2038.Sok. Çankaya/ANKARA</li>
-          <li><EmailIcon fontSize="small" style={{marginRight: "5px"}} /> aytinis@gmail.com</li>
-        </ul>
-      </div>
-      <div className="icons">
-        <ul>
-          <li><TwitterIcon fontSize="10px"/></li>
-          <li><FacebookIcon fontSize="10px"/></li>
-          <li><InstagramIcon fontSize="10px"/></li>
-        </ul>
+      <div className="contTB">
+        <div className="addresBar">
+          <ul>
+            <li><LocationOnIcon fontSize="small" style={{marginRight: "5px"}}/> Mutlukent Mah. 2038.Sok. Çankaya/ANKARA</li>
+            <li><EmailIcon fontSize="small" style={{marginRight: "5px"}} /> aytinis@gmail.com</li>
+          </ul>
+        </div>
+        <div className="icons">
+          <ul>
+            <li><TwitterIcon fontSize="10px"/></li>
+            <li><FacebookIcon fontSize="10px"/></li>
+            <li><InstagramIcon fontSize="10px"/></li>
+          </ul>
+        </div>
       </div>
     </div>
   )

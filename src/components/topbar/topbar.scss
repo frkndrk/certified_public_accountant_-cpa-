@@ -8,48 +8,54 @@
     position: relative;
     z-index: 20;
     
-
-    .addresBar{ 
-        width: 600px;
+    .contTB{
+        width: 80%;
         display: flex;
-        justify-content: left;
-        align-items: center;
-        z-index: 20;
 
-        ul{
+        .addresBar{ 
+            flex: 1;
             display: flex;
-            justify-content: space-between;
+            justify-content: left;
             align-items: center;
+            z-index: 20;
 
-            li{
+            ul{
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
-                font-size: 13px;
-                color: black;
 
-                &:nth-child(1) {
-                    margin-right: 50px;
+                li{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 13px;
+                    color: black;
+
+                    &:nth-child(1) {
+                        margin-right: 50px;
+                    }
+                }
+            }
+        }
+
+        .icons{
+            display: flex;
+            flex: 1;
+            justify-content: end;
+            align-items: center;
+            z-index: 20;
+
+            ul{
+                display: flex;
+
+                li{
+                    display: flex;
+                    margin: 0 15px;
+                    cursor: pointer;
                 }
             }
         }
     }
 
-    .icons{
-        display: flex;
-        width: 600px;
-        justify-content: end;
-        align-items: center;
-        z-index: 20;
-
-        ul{
-            display: flex;
-
-            li{
-                display: flex;
-                margin: 0 15px;
-                cursor: pointer;
-            }
-        }
-    }
+    
 }

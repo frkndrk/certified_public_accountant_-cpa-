@@ -92,6 +92,12 @@
                         padding: 0 10px;
                         color: #000000;
                         box-shadow: 0 5px 20px 1px #aaa;
+
+                        &:hover{
+                            background-color: #5a5959;
+                            color: #fff;
+                            transition: all .5s ease;
+                        }
                     }
                 }
 
@@ -228,11 +234,7 @@
                         visibility: visible;
                     }
                 }
-
                 
-
-                
-
                 .arrows{
                     
                     .left{

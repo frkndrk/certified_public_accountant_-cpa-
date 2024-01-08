@@ -74,7 +74,7 @@ const AboutUs = () => {
     <div className='aboutUs'>
       <div className="contHeader">
         <span><AlignVerticalTopIcon /></span>
-        <h2>MusEn YMM</h2>
+        <h2>EnKa YMM</h2>
         <h1>Hizmet Alanlarımız</h1>
       </div>
       <div className="container">
@@ -90,6 +90,10 @@ const AboutUs = () => {
                     <h3>{item.name}</h3>
                   </div>
                 </div>
+                <div className="hvrCnt">
+                  <h1>EnKa YMM</h1>
+                  <h3>Hizmet Alanlarımız</h3>
+                </div>
               </div>
             </Link>
           ))}
@@ -101,7 +105,7 @@ const AboutUs = () => {
         <div className="description">
           <div className="descCont">
             <h1>Sizlere Hizmet Vermekten Mutluluk Duyuyoruz</h1>
-            <p className="desc1">Dürüstlük ve güveni ilke edinen şirketimizin amacı; kurumsallaşma yolunda, ulusal ve uluslararası meslek etiğine bağlı, sürekli kendini yenileme ve yaşam boyu öğrenmenin gerekliliğine olan inançla müşterilerimizin ihtiyaçlarına en uygun profesyonel çözümleri zamanında sunmak ve müşterilerimizin çalışmalarına değer katmaktır.<br/>MusEn, yerli ve yabancı bireysel ve kurumsal tüm müşterilere vergi, muhasebe, mali hukuk ve finansal alanlarda denetim ve danışmanlık hizmeti sunmaktadır.</p>
+            <p className="desc1">Dürüstlük ve güveni ilke edinen şirketimizin amacı; kurumsallaşma yolunda, ulusal ve uluslararası meslek etiğine bağlı, sürekli kendini yenileme ve yaşam boyu öğrenmenin gerekliliğine olan inançla müşterilerimizin ihtiyaçlarına en uygun profesyonel çözümleri zamanında sunmak ve müşterilerimizin çalışmalarına değer katmaktır.<br/>EnKa, yerli ve yabancı bireysel ve kurumsal tüm müşterilere vergi, muhasebe, mali hukuk ve finansal alanlarda denetim ve danışmanlık hizmeti sunmaktadır.</p>
             <div className="cont1">
             <Link to="/Kurumsal" style={{textDecoration: "none", color: "#fff"}}><button style={{cursor: "pointer", height: "60px"}}>DEVAMI İÇİN</button></Link>
               <div className="contact">
@@ -124,7 +128,7 @@ const AboutUs = () => {
       </div>
       <div className="contA1">
         <div className="textA1">
-          <h4>MUSEN YMM</h4>
+          <h4>ENKA YMM</h4>
           <h1>Denetim, Tasdik ve Danışmanlık Alanlarında Bizlere Ulaşabilirsiniz.</h1>
           <button className="btnA1"><Link className="link" to="/Iletisim">İletişim</Link></button>
         </div>

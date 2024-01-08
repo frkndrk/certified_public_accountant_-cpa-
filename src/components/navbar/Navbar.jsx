@@ -3,6 +3,7 @@ import "./navbar.scss"
 import CallIcon from '@mui/icons-material/Call'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { Link } from "react-router-dom"
+import AlignVerticalTopIcon from '@mui/icons-material/AlignVerticalTop';
 
 const Navbar = () => {
 
@@ -23,8 +24,8 @@ const Navbar = () => {
     <div className={navbar ? "navbar active" : "navbar"} style={{position: navbar && "fixed", top: navbar && "0"}}>
       <div className="cont1">
         <div className={navbar ? "logo fontColor" : "logo"}>
-          <h1 className={navbar && "borderBottom"}><Link className="link" to="/Anasayfa">MusEn</Link></h1>
-          <p className={navbar && "fontColor"}>Güvenle</p>
+          <span className={navbar && "fontColor"}><AlignVerticalTopIcon fontSize="large"/></span>
+          <h1 className={navbar && "borderBottom"}><Link className="link" to="/Anasayfa">EnKa</Link></h1>
         </div>
         <div className="menu">
           <ul className="menuUl">
