@@ -4,6 +4,17 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import AlignVerticalTopIcon from '@mui/icons-material/AlignVerticalTop';
 import CallIcon from '@mui/icons-material/Call'
 import { Link } from "react-router-dom";
+import service1 from "../../assets/working-done.webp"
+import service2 from "../../assets/dualMeeting.jpg"
+import service3 from "../../assets/calculate1.jpg"
+import service4 from "../../assets/handShake1.jpg"
+import service5 from "../../assets/laughing.jpg"
+import service6 from "../../assets/computer.jpg"
+import service7 from "../../assets/calculate2.jpg"
+import service8 from "../../assets/handShake3.webp"
+import shape from "../../assets/shape1.png"
+import handShake from "../../assets/handShake4.jpeg"
+import polkadots from "../../assets/polkadots.png"
 
 const AboutUs = () => {
 
@@ -31,42 +42,42 @@ const AboutUs = () => {
     {
       id: 1,
       name: "Tam Tasdik",
-      img: "../../src/assets/working-done.webp"
+      img: service1
     },
     {
       id: 2,
       name: "KDV ile ÖTV İadesi ve Mahsup İşlemleri",
-      img: "../../src/assets/dualMeeting.jpg"
+      img: service2
     },
     {
       id: 3,
       name: "Vergi Uyuşmazlıkları",
-      img: "../../src/assets/calculate1.jpg"
+      img: service3
     },
     {
       id: 4,
       name: "Şirketler Hukuku Alanında",
-      img: "../../src/assets/handShake1.jpg"
+      img: service4
     },
     {
       id: 5,
       name: "Vergi ve Revizyon Konusunda Danışmanlık",
-      img: "../../src/assets/laughing.jpg"
+      img: service5
     },
     {
       id: 6,
       name: "Vergi ve Muhasebe Yönetsel Danışmanlık",
-      img: "../../src/assets/computer.jpg"
+      img: service6
     },
     {
       id: 7,
       name: "Diğer Denetim İşlemleri",
-      img: "../../src/assets/calculate2.jpg"
+      img: service7
     },
     {
       id: 8,
       name: "Diğer Tasdik İşlemleri",
-      img: "../../src/assets/handShake3.webp"
+      img: service8
     }
   ]
 
@@ -121,9 +132,9 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="descImg">
-          <img className="desc2" src="../../src/assets/shape1.png" alt="" />
-          <img className="desc3" src="../../src/assets/handShake4.jpeg" alt="" />
-          <img className="desc4" src="../../src/assets/polkadots.png" alt="" />
+          <img className="desc2" src={shape} alt="" />
+          <img className="desc3" src={handShake} alt="" />
+          <img className="desc4" src={polkadots} alt="" />
         </div>
       </div>
       <div className="contA1">
