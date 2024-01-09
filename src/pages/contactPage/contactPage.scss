@@ -308,10 +308,10 @@
                     outline: none;
                     border:none;
                     box-shadow: 0 0 10px 1px #aaa;
+                    padding-left: 20px;
+                    padding-top: 20px;
 
                     &::placeholder{
-                        padding-left: 20px;
-                        padding-top: 10px;
                         font-size: 15px;
                     }
                 }
@@ -331,13 +331,41 @@
                         box-shadow: 0 0 10px 1px #aaa;
                         background-color: #fff;
                         font-size: 16px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
 
                         &:hover{
-                            background-color: #aaa;
+                            background-color: #424242;
                             color: #fff;
                             transition: all .5s ease;
                         }
+
+                        span{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 5px;
+                        }
+
+                        .activeIcon{
+                            animation: turn 3s linear;
+
+                            @keyframes turn {
+                                0%{
+                                    transform: rotate(0deg);
+                                }
+                                100%{
+                                    transform: rotate(900deg);
+                                }
+                            }
+                        }
                         
+                    }
+
+                    .active{
+                        background-color: rgb(185, 191, 185);
+                        color: #fff;
                     }
                 }
 
