@@ -1,10 +1,12 @@
 import "./partnersPage.scss"
+import plazaPP from "../../assets/plazalar2.jpg"
+import profile from "../../assets/enesProfile.jpeg"
 
 const PartnersPage = () => {
   return (
     <div className="partnersPage">
         <div className="imgContB1">
-          <img src="../../src/assets/plazalar2.jpg" alt="" />
+          <img src={plazaPP} alt="" />
           <div className='textOff'>
             <h1>Ortaklarımız</h1>
             <h2>Sizlere Hizmet Vermekten Mutluluk Duyuyoruz</h2>
@@ -18,15 +20,7 @@ const PartnersPage = () => {
                 </div>
             </div>
             <div className="infoImg">
-                <img src="../../src/assets/enesProfile.jpeg" alt="" />
-            </div>
-        </div>
-        <div className="infoCont">
-            <div className="info">
-            
-            </div>
-            <div className="infoImg">
-                <img src="../../src/assets/enesProfile.jpeg" alt="" />
+                <img src={profile} alt="" />
             </div>
         </div>
     </div>

@@ -37,7 +37,6 @@ const Navbar = () => {
               </ul>
             </li>
             <li className={navbar ? "menuLi fontColor" : "menuLi"}><Link className="link" to="/Hizmetlerimiz">Hizmetlerimiz</Link></li>
-            {/* <li className={navbar ? "menuLi fontColor" : "menuLi"}><Link className="link" to="/Mevzuat">Mevzuat</Link></li> */}
             <li className={navbar ? "menuLi fontColor" : "menuLi"}><Link className="link" to="/Iletisim">İletişim</Link></li>
           </ul>
         </div>

@@ -12,8 +12,8 @@ const Topbar = () => {
       <div className="contTB">
         <div className="addresBar">
           <ul>
-            <li><LocationOnIcon fontSize="small" style={{marginRight: "5px"}}/> Mutlukent Mah. 2038.Sok. Çankaya/ANKARA</li>
-            <li><EmailIcon fontSize="small" style={{marginRight: "5px"}} /> aytinis@gmail.com</li>
+            <li><LocationOnIcon fontSize="small" style={{marginRight: "5px"}}/> Mutlukent Mah. 2038.Sok. No:7 Çankaya/ANKARA</li>
+            <li><EmailIcon fontSize="small" style={{marginRight: "5px"}} /> info@enkaymm.com</li>
           </ul>
         </div>
         <div className="icons">

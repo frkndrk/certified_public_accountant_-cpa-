@@ -11,6 +11,21 @@ import Dos6 from "../../components/detailsOfService/Dos6";
 import Dos7 from "../../components/detailsOfService/Dos7";
 import Dos8 from "../../components/detailsOfService/Dos8";
 import { Link, useParams } from "react-router-dom";
+import service1 from "../../assets/working-done.webp"
+import service2 from "../../assets/dualMeeting.jpg"
+import service3 from "../../assets/calculate1.jpg"
+import service4 from "../../assets/handShake1.jpg"
+import service5 from "../../assets/laughing.jpg"
+import service6 from "../../assets/computer.jpg"
+import service7 from "../../assets/calculate2.jpg"
+import service8 from "../../assets/handShake3.webp"
+import meeting from "../../assets/meeting4.jpg"
+import analytics2 from "../../assets/analytics2.webp"
+import meeting6 from "../../assets/meeting6.jpg"
+import customerService from "../../assets/customer-service.jpg"
+import plaza3 from "../../assets/plaza3.webp"
+import callservice2 from "../../assets/callservice.jpg"
+
 
 const ServicePage = () => {
 
@@ -55,42 +70,42 @@ const ServicePage = () => {
         {
           id: 1,
           name: "Tam Tasdik",
-          img: "../../src/assets/working-done.webp"
+          img: service1
         },
         {
           id: 2,
           name: "KDV ile ÖTV İadesi ve Mahsup İşlemleri",
-          img: "../../src/assets/dualMeeting.jpg"
+          img: service2
         },
         {
           id: 3,
           name: "Vergi Uyuşmazlıkları",
-          img: "../../src/assets/calculate1.jpg"
+          img: service3
         },
         {
           id: 4,
           name: "Şirketler Hukuku Alanında",
-          img: "../../src/assets/handShake1.jpg"
+          img: service4
         },
         {
           id: 5,
           name: "Vergi ve Revizyon Konusunda Danışmanlık",
-          img: "../../src/assets/laughing.jpg"
+          img: service5
         },
         {
           id: 6,
           name: "Vergi ve Muhasebe Yönetsel Danışmanlık",
-          img: "../../src/assets/computer.jpg"
+          img: service6
         },
         {
           id: 7,
           name: "Diğer Denetim İşlemleri",
-          img: "../../src/assets/calculate2.jpg"
+          img: service7
         },
         {
           id: 8,
           name: "Diğer Tasdik İşlemleri",
-          img: "../../src/assets/handShake3.webp"
+          img: service8
         }
       ]
     
@@ -99,34 +114,19 @@ const ServicePage = () => {
     const homeImages = [
         {
         id: 1,
-        img: "../../src/assets/meeting4.jpg",
-        descH2: "MusEn YMM",
-        descH1: "2023 Sirküler",
-        desc1: "DAHA FAZLASI İÇİN" 
+        img: meeting
         },
         {
         id: 2,
-        img: "../../src/assets/analytics2.webp",
-        descH2: "MusEn YMM",
-        descH1: "Denetim Tasdik",
-        desc1: "TEKLİF AL",
-        desc2: "HIZLI İLETİŞİM"
+        img: analytics2
         },
         {
         id: 3,
-        img: "../../src/assets/meeting6.jpg",
-        descH2: "MusEn YMM",
-        descH1: "Mali Müşavirlik",
-        desc1: "TEKLİF AL",
-        desc2: "HIZLI İLETİŞİM"
+        img: meeting6
         },
         {
         id: 4,
-        img: "../../src/assets/customer-service.jpg",
-        descH2: "MusEn YMM",
-        descH1: "Danışmanlık Hizmeti",
-        desc1: "TEKLİF AL",
-        desc2: "HIZLI İLETİŞİM"
+        img: customerService
         }
     ]
 
@@ -160,7 +160,7 @@ const ServicePage = () => {
   return (
     <div className='servicePage'>
         <div className="imgContB1">
-          <img src="../../src/assets/plaza3.webp" alt="" />
+          <img src={plaza3} alt="" />
           <div className='textOff'>
             <h1>{services[serviceId - 1].name}</h1>
             <h2>Sizlere Hizmet Vermekten Mutluluk Duyuyoruz</h2>
@@ -176,7 +176,7 @@ const ServicePage = () => {
                     </ul>
                 </div>
                 <div className="cs1B">
-                    <img src="../../src/assets/callservice.jpg" alt="" />
+                    <img src={callservice2} alt="" />
                     <h1>Detaylı Bilgi İçin Arayabilirsiniz</h1>
                     <span><CallIcon /></span>
                     <p className="p1">Sabit Hattımız</p>

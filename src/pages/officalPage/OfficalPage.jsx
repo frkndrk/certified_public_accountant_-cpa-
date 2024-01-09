@@ -1,12 +1,16 @@
 import "./officalPage.scss"
 import AlignVerticalTopIcon from '@mui/icons-material/AlignVerticalTop';
+import buildOffical from "../../assets/build17.jpeg"
+import buildOffical2 from "../../assets/build8.jpeg"
+import hexagon from "../../assets/hexagon.png"
+import hands from "../../assets/hands.jpg"
 
 
 const OfficalPage = () => {
   return (
     <div className='officalPage'>
         <div className="imgContB1">
-          <img src="../../src/assets/build17.jpeg" alt="" />
+          <img src={buildOffical} alt="" />
           <div className='textOff'>
             <h1>Kurumsal</h1>
             <h2>Sizlere Hizmet Vermekten Mutluluk Duyuyoruz</h2>
@@ -21,14 +25,14 @@ const OfficalPage = () => {
             <p>Bu amaçla Müşavirliğimizde, vergi ve denetim alanında tüm müşterilerimizin istek ve ihtiyaçları ile doğrudan alakadar olup, üst düzey bir ilgiyle profesyonel ve güvenilir butik hizmet sunmaktayız.</p>
           </div>
           <div className="contImgB1">
-            <img src="../../src/assets/build8.jpeg" alt="" />
+            <img src={buildOffical2} alt="" />
           </div>
         </div>
         <div className="contB1">
-          <img className="contB11" src="../../src/assets/hexagon.png" alt="" />
+          <img className="contB11" src={hexagon} alt="" />
           <div className="contB1A">
             <div className="contB1A1">
-              <img src="../../src/assets/hands.jpg" alt="" />
+              <img src={hands} alt="" />
             </div>
             <div className="contB1A2">
               <h4 className="contB1A21">EnKa YMM</h4>

@@ -5,11 +5,16 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import CoffeeIcon from '@mui/icons-material/Coffee';
 import { Link } from "react-router-dom";
 import AlignVerticalTopIcon from '@mui/icons-material/AlignVerticalTop';
+import plaza from "../../assets/plaza3.webp";
+import buildImg from "../../assets/build21.jpeg";
+import callservice from "../../assets/callservice.jpg";
+
+
 const ContactPage = () => {
   return (
     <div className='contactPage'>
         <div className="imgContB1">
-          <img src="../../src/assets/plaza3.webp" alt="" />
+          <img src={plaza} alt="" />
           <div className='textOff'>
             <h1>İletişim</h1>
             <h2>Danışmak istediğiniz sorularınız için aramaktan çekinmeyin</h2>
@@ -29,7 +34,7 @@ const ContactPage = () => {
               </iframe>
             </div>
             <div className="place">
-              <img src="../../src/assets/build21.jpeg" alt="" />
+              <img src={buildImg} alt="" />
             </div>
           </div>
         </div>
@@ -56,7 +61,7 @@ const ContactPage = () => {
               </div>
             </div>
             <div className="desc">
-              <img src="../../src/assets/callservice.jpg" alt="" />
+              <img src={callservice} alt="" />
               <h2 className="descHeader">Detaylı bilgi almak için arayabilirsiniz.</h2>
             </div>
           </div>
