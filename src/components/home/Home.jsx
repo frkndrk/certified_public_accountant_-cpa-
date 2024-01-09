@@ -2,6 +2,11 @@ import "./home.scss"
 import React, { useEffect, useState } from 'react'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import { Link } from "react-router-dom";
+import homeImg1 from "../../assets/plaza6.jpg";
+import homeImg2 from "../../assets/working.png";
+import homeImg3 from "../../assets/plaza5.jpg";
+import homeImg4 from "../../assets/customer-service.jpg";
+import homeShape from "../../assets/shape.png";
 
 const Home = () => {
 
@@ -10,13 +15,13 @@ const Home = () => {
   const homeImages = [
     {
       id: 1,
-      img: "../../src/assets/plaza6.jpg",
+      img: homeImg1,
       descH2: "ENKA",
       descH1: "Yeminli Mali Müşavirlik"
     },
     {
       id: 2,
-      img: "../../src/assets/working.png",
+      img: homeImg2,
       descH2: "ENKA YMM",
       descH1: "Denetim Tasdik",
       desc1: "TEKLİF AL",
@@ -24,7 +29,7 @@ const Home = () => {
     },
     {
       id: 3,
-      img: "../../src/assets/plaza5.jpg",
+      img: homeImg3,
       descH2: "ENKA YMM",
       descH1: "Mali Müşavirlik",
       desc1: "TEKLİF AL",
@@ -32,7 +37,7 @@ const Home = () => {
     },
     {
       id: 4,
-      img: "../../src/assets/customer-service.jpg",
+      img: homeImg4,
       descH2: "ENKA YMM",
       descH1: "Danışmanlık Hizmeti",
       desc1: "TEKLİF AL",
@@ -97,22 +102,8 @@ const Home = () => {
         ))}
       </div>
       <div className="shape2">
-        <img className="shapeImg" src="../../src/assets/shape.png" alt="" />
+        <img className="shapeImg" src={homeShape} alt="" />
       </div>
-      {/* <div className="dots">
-        <div className="dot">
-          <div className="dot-out"></div>
-        </div>
-        <div className="dot">
-          <div className="dot-out"></div>
-        </div>
-        <div className="dot">
-          <div className="dot-out"></div>
-        </div>
-        <div className="dot">
-          <div className="dot-out"></div>
-        </div>
-      </div> */}
       <div className="arrows">
         <button onClick={clickArrowLeft} className="left"><ArrowBackIosNewIcon /></button>
         <button onClick={clickArrowRight} className="right"><ArrowBackIosNewIcon /></button>
@@ -127,9 +118,3 @@ const Home = () => {
 }
 
 export default Home
-
-
-/* <img data-aos="fade-down" style={{width: "100vw", height: "100vh", position: "absolute", bottom: "0", objectFit: "cover", zIndex: "1"}} src="../../src/assets/mountain.png" alt="yeminli mali müşsavir, ymm, ymm ankara, müşavir, musavir" />
-<img data-aos="fade-up" style={{width: "100vw", height: "400px", position: "absolute", bottom: "0", zIndex: "2"}} src="../../src/assets/forest.png" alt="yeminli mali müşsavir, ymm, ymm ankara, müşavir, musavir" />
-<img data-aos="fade-down" style={{width: "100vw", height: "400px", position: "absolute", top: "-100px", transform: "rotate(180deg)", zIndex: "0"}} src="../../src/assets/clouds2.png" alt="yeminli mali müşsavir, ymm, ymm ankara, müşavir, musavir" />
- */
