@@ -18,7 +18,7 @@ const ContactPage = () => {
 
   const [btnState, setBtnState] = useState(false)
   const [btnTxt, setBtnTxt] =  useState("Gönder")
-  const [icon, setIcon] = useState(<HexagonIcon />)
+  const [icon, setIcon] = useState()
   const [focused, setFocused] = useState(false)
 
   const [values, setValues] = useState({

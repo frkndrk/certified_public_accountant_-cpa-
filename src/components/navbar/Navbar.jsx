@@ -8,6 +8,7 @@ import AlignVerticalTopIcon from '@mui/icons-material/AlignVerticalTop';
 const Navbar = () => {
 
   const [navbar, setNavbar] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   const scrollNum = () => {
     if(window.scrollY >= 50) {
@@ -24,7 +25,7 @@ const Navbar = () => {
     <div className={navbar ? "navbar active" : "navbar"} style={{position: navbar && "fixed", top: navbar && "0"}}>
       <div className="cont1">
         <div className={navbar ? "logo fontColor" : "logo"}>
-          <span className={navbar && "fontColor"}><AlignVerticalTopIcon fontSize="large"/></span>
+          <span className={navbar && "fontColor"}><AlignVerticalTopIcon fontSize="medium"/></span>
           <h1 className={navbar && "borderBottom"}><Link className="link" to="/Anasayfa">EnKa</Link></h1>
         </div>
         <div className="menu">
@@ -45,9 +46,16 @@ const Navbar = () => {
             <li><CallIcon style={{backgroundColor: "#fff", color: "black", borderRadius: "50%", padding: "10px"}} /></li>
             <li>
               <p className={navbar && "fontColor"}>Sabit Hattımız</p>
-              <p className={navbar && "fontColor"}>444 01 01</p>
+              <p className={navbar && "fontColor"}>444 01 55</p>
             </li>
           </ul>
+        </div>
+        <div className={"hamburger " + (menuOpen && "active")} onClick={() => setMenuOpen(!menuOpen)}>
+            <ul className="hambList">
+              <span className={navbar ? "hamb bgColor" : "hamb"}></span>
+              <span className={navbar ? "hamb bgColor" : "hamb"}></span>
+              <span className={navbar ? "hamb bgColor" : "hamb"}></span>
+            </ul>
         </div>
       </div>
     </div>

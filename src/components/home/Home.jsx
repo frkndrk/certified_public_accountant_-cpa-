@@ -74,20 +74,20 @@ const Home = () => {
 
   return (
     <div className="home">
-      <div className="contHome">
+      <div className="contHomeA">
         {homeImages.map((image,index) => (
           <img
             key={index}
-            className="homeImg"
+            className="homeImg1"
             src={image.img}
             alt="yeminli mali müşsavir, ymm, ymm ankara, müşavir, musavir"
             style={{ opacity: index === currentState ? 0.5 : 0 }}
           />
         ))}
       </div>
-      <div className="contHome1">
+      <div className="contHome11">
         {homeImages.map((item, index) => (
-          <div className="header"
+          <div className="header1"
             key={index}
             style={{opacity: index === currentState ? 1 : 0}}>
             <h2>{item.descH2}</h2>
