@@ -134,7 +134,7 @@ const AboutUs = () => {
         <div className="description">
           <div className="descCont">
             <h1>Sizlere Hizmet Vermekten Mutluluk Duyuyoruz</h1>
-            <p className="desc1">Dürüstlük ve güveni ilke edinen şirketimizin amacı; kurumsallaşma yolunda, ulusal ve uluslararası meslek etiğine bağlı, sürekli kendini yenileme ve yaşam boyu öğrenmenin gerekliliğine olan inançla müşterilerimizin ihtiyaçlarına en uygun profesyonel çözümleri zamanında sunmak ve müşterilerimizin çalışmalarına değer katmaktır.<br/>EnKa, yerli ve yabancı bireysel ve kurumsal tüm müşterilere vergi, muhasebe, mali hukuk ve finansal alanlarda denetim ve danışmanlık hizmeti sunmaktadır.</p>
+            <p className="desc1">Firmamız dürüstlüğü, güvenirliliği, ulaşılabilirliği ve dinamizmi ilke edinerek müşterilerimize ve paydaşlarımıza hizmet vermeyi , sunmuş olduğu hizmetlerin kalitesinde evrensel düzeyi yakalamayı amaç edinmiştir. Bu kapsamda genç, dinamik , vizyoner ve uzman kadrolarımız ile müşteri ve paydaşlarımızın ticari hayatlarına katma değer yaratarak hizmet vermekteyiz.</p>
             <div className="cont1">
             <Link to="/Kurumsal" style={{textDecoration: "none", color: "#fff"}}><button>DEVAMI İÇİN</button></Link>
               <div className="contact">

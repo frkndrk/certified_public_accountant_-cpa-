@@ -57,6 +57,15 @@ const Navbar = () => {
               <span className={navbar ? "hamb bgColor" : "hamb"}></span>
             </ul>
         </div>
+        <div className={"menuListList " + (menuOpen && "active")} id="menuList" style={{top: navbar && "70px", height: "calc(100vh - 70px)"}}>
+          <ul>
+            <li onClick={() => setMenuOpen(false)} className="menu1"><Link to="/Anasayfa">Anasayfa</Link></li>
+            <li onClick={() => setMenuOpen(false)} className="menu1"><Link to="/Kurumsal">Kurumsal</Link></li>
+            <li onClick={() => setMenuOpen(false)} className="menu1"><Link to="/Ortaklarimiz">Ortaklarımız</Link></li>
+            <li onClick={() => setMenuOpen(false)} className="menu1"><Link to="/Hizmetlerimiz">Hizmetlerimiz</Link></li>
+            <li onClick={() => setMenuOpen(false)} className="menu1"><Link to="/Iletisim">İletişim</Link></li>
+          </ul>
+        </div>
       </div>
     </div>
   )
