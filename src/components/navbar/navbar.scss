@@ -5,12 +5,11 @@
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    z-index: 11;
+    z-index: 100;
     border: none;
     position: absolute;
     border-bottom: 1px solid #aaa;
     background-color: rgba(254, 254, 254, 0.6);
-    overflow: hidden;
 
     @media (max-width: 830px) {
         height: 70px;

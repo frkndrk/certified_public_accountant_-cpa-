@@ -1,5 +1,5 @@
 import "./aboutUs.scss"
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import AlignVerticalTopIcon from '@mui/icons-material/AlignVerticalTop';
 import CallIcon from '@mui/icons-material/Call'
@@ -17,20 +17,18 @@ import handShake from "../../assets/handShake4.jpeg"
 import polkadots from "../../assets/polkadots.png"
 
 const AboutUs = () => {
-
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [selectId, setSelectId] = useState(0)
 
   useEffect(() => {
-        const timer = setTimeout(() => {
-          if(currentSlide === 5) {
-            setCurrentSlide(0)
-          } else {
-            setCurrentSlide(currentSlide + 1)
-          }
-        }, 5000)
-        return () => clearTimeout(timer)
-  }, [currentSlide])
+      const timer = setTimeout(() => {
+        if(currentSlide === 5) {
+          setCurrentSlide(0)
+        } else {
+          setCurrentSlide(currentSlide + 1)
+        }
+      }, 5000)
+      return () => clearTimeout(timer)
+  },[currentSlide])
   
   const handleClick = (way) => {
     way === "left"
@@ -92,7 +90,7 @@ const AboutUs = () => {
         <div className="slider">
           {services.map((item) => (
             <Link to={"/Hizmetler/" + `${item.id}`} style={{textDecoration: "none", color: "#000000"}}>
-              <div key={item.id} className="contCards" style={{transform: `translateX(-${currentSlide * 370}px)`}} onClick={() => setSelectId(item.id)}>
+              <div key={item.id} className="contCards" style={{transform: `translateX(-${currentSlide * 370}px)`}}>
                 <div className="card">
                   <div className="contImg">
                     <img src={item.img} alt=""/>
@@ -109,6 +107,26 @@ const AboutUs = () => {
             </Link>
           ))}
         </div>
+        <div className="slider2">
+          {services.map((item) => (
+            <Link to={"/Hizmetler/" + `${item.id}`} style={{textDecoration: "none", color: "#000000"}}>
+              <div key={item.id} className="contCards2">
+                <div className="card2">
+                  <div className="contImg2">
+                    <img src={item.img} alt=""/>
+                  </div>
+                  <div className="contName2">
+                    <h3>{item.name}</h3>
+                  </div>
+                </div>
+                <div className="hvrCnt2">
+                  <h1>EnKa YMM</h1>
+                  <h3>Hizmet Alanlarımız</h3>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
         <div className="leftArrow" onClick={() => handleClick("left")}><ArrowBackIosNewIcon /></div>
         <div className="rightArrow" onClick={() => handleClick()} style={{transform: "rotate(180deg)", zIndex: "40"}}><ArrowBackIosNewIcon /></div>
       </div>
@@ -118,10 +136,10 @@ const AboutUs = () => {
             <h1>Sizlere Hizmet Vermekten Mutluluk Duyuyoruz</h1>
             <p className="desc1">Dürüstlük ve güveni ilke edinen şirketimizin amacı; kurumsallaşma yolunda, ulusal ve uluslararası meslek etiğine bağlı, sürekli kendini yenileme ve yaşam boyu öğrenmenin gerekliliğine olan inançla müşterilerimizin ihtiyaçlarına en uygun profesyonel çözümleri zamanında sunmak ve müşterilerimizin çalışmalarına değer katmaktır.<br/>EnKa, yerli ve yabancı bireysel ve kurumsal tüm müşterilere vergi, muhasebe, mali hukuk ve finansal alanlarda denetim ve danışmanlık hizmeti sunmaktadır.</p>
             <div className="cont1">
-            <Link to="/Kurumsal" style={{textDecoration: "none", color: "#fff"}}><button style={{cursor: "pointer", height: "60px"}}>DEVAMI İÇİN</button></Link>
+            <Link to="/Kurumsal" style={{textDecoration: "none", color: "#fff"}}><button>DEVAMI İÇİN</button></Link>
               <div className="contact">
                 <ul>
-                  <li><CallIcon style={{backgroundColor: "#aaa", color: "white", borderRadius: "50%", padding: "15px"}} /></li>
+                  <li><CallIcon style={{backgroundColor: "rgb(136, 136, 137)", color: "white", borderRadius: "50%", padding: "15px"}} /></li>
                   <li>
                     <p className="fontColor">Sabit Hattımız</p>
                     <p className="fontColor">444 01 01</p>
@@ -150,3 +168,19 @@ const AboutUs = () => {
 }
 
 export default AboutUs
+
+/* useEffect(() => {
+  if(window.innerWidth <= 930) {
+    setNavbar(true);
+  } else {
+    setNavbar(false)
+    const timer = setTimeout(() => {
+      if(currentSlide === 5) {
+        setCurrentSlide(0)
+      } else {
+        setCurrentSlide(currentSlide + 1)
+      }
+    }, 5000)
+    return () => clearTimeout(timer)
+  }
+},[currentSlide]) */
