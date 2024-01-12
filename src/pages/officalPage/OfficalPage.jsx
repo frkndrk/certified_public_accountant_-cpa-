@@ -1,16 +1,17 @@
 import "./officalPage.scss"
 import AlignVerticalTopIcon from '@mui/icons-material/AlignVerticalTop';
-import buildOffical from "../../assets/build17.jpeg"
+
 import buildOffical2 from "../../assets/build8.jpeg"
 import hexagon from "../../assets/hexagon.png"
 import hands from "../../assets/hands.jpg"
+import plaza from "../../assets/plaza3.webp";
 
 
 const OfficalPage = () => {
   return (
     <div className='officalPage'>
         <div className="imgContB1">
-          <img src={buildOffical} alt="" />
+          <img src={plaza} alt="" />
           <div className='textOff'>
             <h1>Kurumsal</h1>
             <h2>Sizlere Hizmet Vermekten Mutluluk Duyuyoruz</h2>

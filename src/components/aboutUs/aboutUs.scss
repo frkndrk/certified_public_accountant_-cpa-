@@ -9,6 +9,10 @@
     width: 100vw;
     margin-bottom: 100px;
 
+    @media (max-width: 700px) {
+        margin-bottom: 50px;
+    }
+
     .contHeader{
         width: 80%;
         display: flex;
@@ -337,14 +341,14 @@
         align-items: center;
         flex-wrap: wrap;
         width: 80%;
-        margin: 100px 0 300px 0;
+        margin: 100px 0 200px 0;
 
         @media (max-width: 930px) {
             flex-direction: column;
         }
 
-        @media (max-width: 930px) {
-            margin: 100px 0 200px 0;
+        @media (max-width: 830px) {
+            margin-bottom: 100px;
         }
 
         .description{

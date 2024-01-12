@@ -5,7 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import CoffeeIcon from '@mui/icons-material/Coffee';
 import { Link } from "react-router-dom";
 import AlignVerticalTopIcon from '@mui/icons-material/AlignVerticalTop';
-import plaza from "../../assets/plaza3.webp";
+import buildOffical from "../../assets/build17.jpeg"
 import buildImg from "../../assets/build21.jpeg";
 import callservice from "../../assets/callservice.jpg";
 import { useState } from "react";
@@ -69,7 +69,7 @@ const ContactPage = () => {
   return (
     <div className='contactPage'>
         <div className="imgContB1">
-          <img src={plaza} alt="" />
+          <img src={buildOffical} alt="" />
           <div className='textOff'>
             <h1>İletişim</h1>
             <h2>Danışmak istediğiniz sorularınız için aramaktan çekinmeyin</h2>

@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="container">
             <div className="cont-1 mr">
                 <div className="header1">
-                    <span><AlignVerticalTopIcon fontSize="normal" style={{color: "white"}} /></span>
+                    <span style={{display: "flex", justifyContent: "center", alignItems: "center"}}><AlignVerticalTopIcon fontSize="normal" style={{color: "white"}} /></span>
                     <h1>EnKa</h1>
                 </div>
                 <div className="desc1">

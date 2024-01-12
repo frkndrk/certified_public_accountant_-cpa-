@@ -12,6 +12,14 @@
         background-color: #000000;
         position: relative;
 
+        @media (max-width: 830px) {
+            height: 60vh;
+        }
+    
+        @media (max-width: 580px) {
+            height: 50vh;
+        }
+
         img{
             width: 100%;
             object-fit: cover;
@@ -62,8 +70,24 @@
         margin: 100px 0;
         width: 60%;
         height: 80vh;
-        background-color: rgba(36, 36, 50, 0.9);
+        background-color: rgba(255, 255, 255, 0.9);
         overflow: hidden;
+        box-shadow: 0 0 10px 1px #aaa;
+        min-width: 370px;
+        min-height: 580px;
+
+        @media (max-width: 780px) {
+            width: 80%;
+        }
+
+        @media (max-width: 578px) {
+            width: 90%;
+        }
+
+        @media (max-width: 511px) {
+            width: 95%;
+            height: 60vh;
+        }   
 
         .info{
             flex: 5;
@@ -71,28 +95,115 @@
 
             .infoA1{
                 display: flex;
-                align-items: end;
+                align-items: start;
                 justify-content: center;
-                color: #fff;
+                flex-direction: column;
+                color: #000000;
                 margin-top: 20px;
 
-                h1{
-                    border-bottom: 1px solid #fff;
-                    margin-right: 10px;
+                .names{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 10px 0 10px;
+                    margin-bottom: 30px;
+
+                    @media (max-width: 1135px) {
+                        margin-bottom: 10px;
+                    }
+
+                    h1{
+                        border-bottom: 1px solid #000000;
+                        margin-right: 20px;
+
+                        @media (max-width: 1350px) {
+                            font-size: 30px;
+                        }
+
+                        @media (max-width: 1135px) {
+                            font-size: 25px;
+                        }
+
+                        @media (max-width: 1063px) {
+                            font-size: 20px;
+                            margin-right: 10px;
+                        }
+
+                        @media (max-width: 964px) {
+                            font-size: 15px;
+                            margin-right: 5px;
+                        }
+                    }
+
+                    h3{
+
+                        @media (max-width: 1282px) {
+                            font-size: 15px;
+                        }
+
+                        @media (max-width: 1063px) {
+                            font-size: 13px;
+                        }
+
+                        @media (max-width: 964px) {
+                            font-size: 11px;
+                        }
+
+                    }
                 }
+
+                .cvInfo{
+                    display: flex;
+                    justify-content: center;
+                    align-items: start;
+                    flex-direction: column;
+                    margin: 0 10px;
+
+                    p{
+                        line-height: 25px;
+                        font-size: 15px;
+                        margin-bottom: 10px;
+
+                        @media (max-width: 1350px) {
+                            font-size: 13px;
+                            margin-bottom: 5px;
+                        }
+
+                        @media (max-width: 1135px) {
+                            margin-bottom: 0;
+                            line-height: 23px;
+                        }
+
+                        @media (max-width: 484px) {
+                            line-height: 20px;
+                        }
+
+                        @media (max-width: 421px) {
+                            line-height: 18px;
+                        } 
+                    }
+                }
+
             }
         }
 
         .infoImg{
             flex: 3;
             height: 100%;
+
+            @media (max-width: 880px) {
+                flex:2;
+            }
             
 
             img{
                 width: 125%;
                 height: 100%;
                 object-fit: cover;
-                opacity: 0.8;
+
+                @media (max-width: 450px) {
+                    width: 150%;
+                }
             }
         }
     }

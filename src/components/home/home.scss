@@ -5,12 +5,20 @@
     background-color: #344137;
     overflow: hidden;
 
+    
+
     @media (max-width: 830px) {
         height: 60vh;
     }
 
+    
+
     @media (max-width: 580px) {
         height: 50vh;
+    }
+
+    @media (min-height: 1000px) {
+        height: 40vh;
     }
 
     .contHomeA{
@@ -230,9 +238,11 @@
             top: 200px;
         }
 
-        @media (max-width: 720px) {
-            top: 220px;
+        @media (max-width: 830px) {
+            top: 150px;
         }
+
+        
         
         .shapeImg{
             margin: 0 auto;
@@ -262,6 +272,11 @@
             @media (max-width: 930px) {
                 width: 100px;
                 height: 100px;
+            }
+
+            @media (max-width: 720px) {
+                width: 70px;
+                height: 70px;
             }
         }
     }
