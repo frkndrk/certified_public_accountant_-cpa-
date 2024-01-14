@@ -72,6 +72,7 @@
         &.active{
             animation: downUp .5s linear;
             height: 100%;
+            margin-bottom: 30px;
 
             @keyframes downUp {
                 0%{

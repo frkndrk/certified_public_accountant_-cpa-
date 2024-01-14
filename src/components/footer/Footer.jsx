@@ -6,6 +6,7 @@ import CallIcon from '@mui/icons-material/Call'
 import CopyrightIcon from '@mui/icons-material/Copyright';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { Link } from "react-router-dom";
+import logoWhite from "../../assets/logoWhite.png"
 
 const Footer = () => {
   return (
@@ -13,8 +14,9 @@ const Footer = () => {
         <div className="container">
             <div className="cont-1 mr">
                 <div className="header1">
-                    <span style={{display: "flex", justifyContent: "center", alignItems: "center"}}><AlignVerticalTopIcon fontSize="normal" style={{color: "white"}} /></span>
-                    <h1>EnKa</h1>
+                    <div className="logoCont">
+                        <img className="logo" src={logoWhite} alt=""></img>
+                    </div>
                 </div>
                 <div className="desc1">
                     <p>

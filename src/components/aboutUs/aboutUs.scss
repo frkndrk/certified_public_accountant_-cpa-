@@ -418,6 +418,7 @@
         @media (max-width: 662px) {
             margin-top: 50px;
         }
+        
 
         .description{
             flex: 1;
@@ -438,6 +439,10 @@
                 align-items: start;
                 flex-direction: column;
 
+                @media (max-width: 450px) {
+                    width: 100%;
+                }
+
                 h1{
                     font-size: 40px;
                     margin-bottom: 20px;
@@ -445,6 +450,12 @@
                     @media (max-width: 1180px) {
                         font-size: 30px;
                     }
+
+                    @media (max-width: 500px) {
+                        font-size: 25px;
+                        margin-bottom: 10px;
+                    }
+                    
                 }
 
                 .desc1{
@@ -494,14 +505,9 @@
                         }
 
                         @media (max-width: 450px) {
-                            width: 100px;
+                            width: 130px;
+                            height: 40px;
                             font-size: 15px;
-                        }
-
-                        @media (max-width: 450px) {
-                            width: 100px;
-                            font-size: 13px;
-                            margin-right: 40px;
                         }
                     }
 
@@ -514,22 +520,36 @@
                             color: #fff;
                 
                             li{
-
-                                &:nth-child(1){
-                                    margin-right: 10px;
-                                }
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 18px;
 
                                 @media (max-width: 450px) {
-                                    width: 60px;
-                                    height: 60px;
+                                    width: 40px;
+                                    height: 40px;
+                                    padding: 0;
+                                }
 
-                                    &:nth-child(1){
-                                        margin-right: 5px;
-                                    }
+                                &:nth-child(1){
+                                    margin-right: -10px;
+                                }
+
+                                &:nth-child(2){
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: start;
+                                    flex-direction: column;
+                                    min-width: 110px;
                                 }
 
                                 p{
-                                    font-size: 14px;
+                                    font-size: 16px;
+
+                                    @media (max-width: 450px) {
+                                        font-size: 13px;
+                                        margin-left: 20px;
+                                    }
                                 }
             
                                 .fontColor{

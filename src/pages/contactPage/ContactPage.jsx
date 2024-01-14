@@ -11,6 +11,7 @@ import callservice from "../../assets/callservice.jpg";
 import { useState } from "react";
 import HexagonIcon from '@mui/icons-material/Hexagon';
 import FileDownloadDoneIcon from '@mui/icons-material/FileDownloadDone';
+import logoBlack from "../../assets/logoBlack.png"
 
 
 const ContactPage = () => {
@@ -97,13 +98,13 @@ const ContactPage = () => {
             <div className="info">
               <div className="infoCont">
                 <h4>Sabit Hattımız</h4>
-                <h3>0312 245 87 90</h3>
+                <h3>0312 123 45 67</h3>
                 <h4>Sabit Hattımız</h4>
-                <h3>0543 123 65 78</h3>
+                <h3>0 554 358 25 38</h3>
                 <h4>E-Mail Adresimiz</h4>
                 <h3>info@enkaymm.com</h3>
                 <h4>Ofis Adresimiz</h4>
-                <h3>Mutlukent Mah. 2038.Sokak Çankaya/Ankara</h3>
+                <h3>Mutlukent Mah. 2038.Sokak No: 7 Çankaya/Ankara</h3>
                 <span></span>
                 <div className="icons">
                   <ul>
@@ -129,8 +130,9 @@ const ContactPage = () => {
           <div className="contA1-1"></div>
         </div>
         <div className="formCont3">
-          <span><AlignVerticalTopIcon /></span>
-          <h2>EnKa YMM</h2>
+          <div className="logoCont">
+            <img className="logo" src={logoBlack} alt=""></img>
+          </div>
           <h1>İletişim Formu</h1>
           <div className="form">
             <form onSubmit={handleClick}>

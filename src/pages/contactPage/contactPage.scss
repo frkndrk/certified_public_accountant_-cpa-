@@ -399,6 +399,29 @@
         width: 80%;
         margin-bottom: 100px;
 
+        .logoCont{
+            color: #000000;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+    
+            .logo{
+                width: 150px;
+                height: 40px;
+                object-fit: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black;
+    
+                @media (max-width: 600px) {
+                }
+    
+                @media (max-width: 460px) {
+                }
+            }
+        }
+
         .form{
             display: flex;
             justify-content: center;

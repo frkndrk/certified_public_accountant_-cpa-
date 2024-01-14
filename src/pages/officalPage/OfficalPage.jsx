@@ -3,7 +3,6 @@ import buildOffical2 from "../../assets/build8.jpeg"
 import hexagon from "../../assets/hexagon.png"
 import hands from "../../assets/hands.jpg"
 import plaza from "../../assets/plaza3.webp"
-import logoWhite from "../../assets/logoWhite.png"
 import logoBlack from "../../assets/logoBlack.png"
 
 

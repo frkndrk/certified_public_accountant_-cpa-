@@ -32,13 +32,31 @@
                 font-size: 40px;
                 border-bottom: 1px solid #fff;
 
-                h1{
-                    color: #ffffff;
-
-                    @media (max-width: 500px) {
-                        font-size: 45px;
-                    }
+                .logoCont{
+                    color: #000000;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+        
+                    .logo{
+                        width: 300px;
+                        height: 100px;
+                        object-fit: cover;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: black;
+                        margin-left: -50px;
+                        margin-bottom: -10px;
+        
+                        @media (max-width: 600px) {
+                            width: 200px;
+                            height: 50px;
+                            margin-left: -30px;
+                            margin-bottom: 10px;
+                        }
                 }
+            }
             }
 
             .desc1{

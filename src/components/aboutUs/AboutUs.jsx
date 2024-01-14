@@ -139,13 +139,13 @@ const AboutUs = () => {
             <h1>Birlikte Daha Güçlü Yarınlara</h1>
             <p className="desc1">Firmamız dürüstlüğü, güvenirliliği, ulaşılabilirliği ve dinamizmi ilke edinerek müşterilerimize ve paydaşlarımıza hizmet vermeyi , sunmuş olduğu hizmetlerin kalitesinde evrensel düzeyi yakalamayı amaç edinmiştir. Bu kapsamda genç, dinamik , vizyoner ve uzman kadrolarımız ile müşteri ve paydaşlarımızın ticari hayatlarına katma değer yaratarak hizmet vermekteyiz.</p>
             <div className="cont1">
-            <Link to="/Kurumsal" style={{textDecoration: "none", color: "#fff"}}><button>DEVAMI İÇİN</button></Link>
+              <Link to="/Kurumsal" style={{textDecoration: "none", color: "#fff"}}><button>DEVAMI İÇİN</button></Link>
               <div className="contact">
                 <ul>
-                  <li><CallIcon style={{backgroundColor: "rgb(136, 136, 137)", color: "white", borderRadius: "50%", padding: "15px"}} /></li>
+                  <li className="clIcn" style={{backgroundColor: "rgb(136, 136, 137)", color: "white", borderRadius: "50%"}}><CallIcon /></li>
                   <li>
                     <p className="fontColor">Sabit Hattımız</p>
-                    <p className="fontColor">444 01 01</p>
+                    <p className="fontColor">0 554 358 25 38</p>
                   </li>
                 </ul>
               </div>
