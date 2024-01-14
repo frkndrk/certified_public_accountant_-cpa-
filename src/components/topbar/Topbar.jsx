@@ -19,7 +19,7 @@ const Topbar = () => {
         </div>
         <div className="phoneNum">
           <span><CallIcon /></span>
-          <p>444 01 55</p>
+          <p>0 554 358 25 38</p>
         </div>
         <div className="icons">
           <ul>

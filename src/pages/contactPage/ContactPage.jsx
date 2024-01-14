@@ -5,11 +5,10 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import CoffeeIcon from '@mui/icons-material/Coffee';
 import { Link } from "react-router-dom";
 import AlignVerticalTopIcon from '@mui/icons-material/AlignVerticalTop';
-import buildOffical from "../../assets/build17.jpeg"
+import buildOffical from "../../assets/plaza5.jpg"
 import buildImg from "../../assets/build21.jpeg";
 import callservice from "../../assets/callservice.jpg";
 import { useState } from "react";
-import CropSquareIcon from '@mui/icons-material/CropSquare';
 import HexagonIcon from '@mui/icons-material/Hexagon';
 import FileDownloadDoneIcon from '@mui/icons-material/FileDownloadDone';
 
@@ -72,7 +71,7 @@ const ContactPage = () => {
           <img src={buildOffical} alt="" />
           <div className='textOff'>
             <h1>İletişim</h1>
-            <h2>Danışmak istediğiniz sorularınız için aramaktan çekinmeyin</h2>
+            <h2>Danışmak istediğiniz sorularınız için lütfen arayın</h2>
           </div>
         </div>
         <div className="formCont">

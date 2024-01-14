@@ -52,6 +52,22 @@
                 letter-spacing: 2px;
                 width: 100vw;
                 text-align: center;
+
+                @media (max-width: 1071px) {
+                    font-size: 50px;
+                }
+
+                @media (max-width: 940px) {
+                    font-size: 40px;
+                }
+
+                @media (max-width: 770px) {
+                    font-size: 35px;
+                }
+
+                @media (max-width: 660px) {
+                    font-size: 30px;
+                }
             }
 
             h2{
@@ -60,6 +76,10 @@
                 letter-spacing: 2px;
                 width: 100vw;
                 text-align: center;
+
+                @media (max-width: 660px) {
+                    font-size: 15px;
+                }
             }
         }
     }
@@ -286,9 +306,10 @@
         position: relative;
         margin-bottom: 100px;
         min-height: 400px;
+        max-height: 500px;
 
         @media (max-width: 463px) {
-            min-height: 500px;
+            height: 400px;
         }
 
         .textA1{
@@ -329,6 +350,10 @@
 
                 @media (max-width: 560px) {
                     font-size: 50px;
+                }
+
+                @media (max-width: 465px) {
+                    font-size: 40px;
                 }
             }
             
@@ -379,7 +404,7 @@
             justify-content: center;
             align-items: center;
             width: 80%;
-            margin-top: 30px;
+            margin-top: 10px;
 
             @media (max-width: 500px) {
                 width: 100%;
@@ -397,9 +422,9 @@
                 }
 
                 input{
-                    width: calc(50% - 33px);
+                    width: calc(50% - 25px);
                     height: 40px;
-                    margin: 10px 0;
+                    margin: 5px 0;
                     outline: none;
                     padding-left: 20px;
                     border:none;
@@ -423,7 +448,7 @@
 
                 textarea{
                     width: 100%;
-                    margin: 20px auto;
+                    margin: 10px auto;
                     outline: none;
                     border:none;
                     box-shadow: 0 0 10px 1px #aaa;
@@ -440,7 +465,6 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin-top: 10px;
 
                     .btn-fc3{
                         width: 150px;

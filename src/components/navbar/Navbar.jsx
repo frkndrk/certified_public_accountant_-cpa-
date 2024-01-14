@@ -46,7 +46,7 @@ const Navbar = () => {
             <li><CallIcon style={{backgroundColor: "#fff", color: "black", borderRadius: "50%", padding: "10px"}} /></li>
             <li>
               <p className={navbar && "fontColor"}>Sabit Hattımız</p>
-              <p className={navbar && "fontColor"}>444 01 55</p>
+              <p className={navbar && "fontColor"}>0 554 358 25 38</p>
             </li>
           </ul>
         </div>
@@ -62,7 +62,7 @@ const Navbar = () => {
             <li onClick={() => setMenuOpen(false)} className="menu1"><Link to="/Anasayfa">Anasayfa</Link></li>
             <li onClick={() => setMenuOpen(false)} className="menu1"><Link to="/Kurumsal">Kurumsal</Link></li>
             <li onClick={() => setMenuOpen(false)} className="menu1"><Link to="/Ortaklarimiz">Ortaklarımız</Link></li>
-            <li onClick={() => setMenuOpen(false)} className="menu1"><Link to="/Hizmetlerimiz">Hizmetlerimiz</Link></li>
+            <li onClick={() => setMenuOpen(false)} className="menu1"><Link to="/Hizmetler">Hizmetlerimiz</Link></li>
             <li onClick={() => setMenuOpen(false)} className="menu1"><Link to="/Iletisim">İletişim</Link></li>
           </ul>
         </div>

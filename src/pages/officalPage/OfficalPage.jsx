@@ -22,8 +22,9 @@ const OfficalPage = () => {
             <span><AlignVerticalTopIcon fontSize="small"/></span>
             <h2>EnKa YMM</h2>
             <h1>Hakkımızda</h1>
-            <p>Butik hizmet anlayışını, kurumsal yapımızla birleştirip, meslek etiğine bağlı kalarak bilgi birikimimiz ve tecrübelerimiz ışığında, yerli ve yabancı, bireysel ve kurumsal tüm müşterilerimizin sorunlarına sağlıklı ve pozitif çözüm önerileri ile yaklaşarak, güncel bilgilerle hızlı, güvenilir ve eksiksiz en üst kalitede mali danışmanlık hizmetleri sunmak öncelikli hedefimizdir.</p>
-            <p>Bu amaçla Müşavirliğimizde, vergi ve denetim alanında tüm müşterilerimizin istek ve ihtiyaçları ile doğrudan alakadar olup, üst düzey bir ilgiyle profesyonel ve güvenilir butik hizmet sunmaktayız.</p>
+            <p>EnKa Yeminli Mali Müşavirlik hizmetlerinden Bağımsız Denetime, Muhasebe hizmetlerinden Mali Müşavirliğe, Sosyal Güvenlik Danışmanlığı hizmetlerinden Mesleki Eğitime kadar, geniş bir yelpazede müşterilerine hizmet vermektedir.</p>
+            <p>Enka dürüstlüğü, güvenirliliği, ulaşılabilirliği ve dinamizmi ilke edinerek müşterilerimize ve paydaşlarımıza hizmet vermeyi , sunmuş olduğu hizmetlerin kalitesinde evrensel düzeyi yakalamayı amaç olarak belirlemiştir. Bu kapsamda genç, dinamik , vizyoner ve uzman kadrolarımız ile müşteri ve paydaşlarımızın ticari hayatlarına katma değer yaratarak hizmet vermeyi hedeflemektedir.</p>
+            <p>EnKa enerji, inşaat, finans, turizm, medya, yazılım, e-ticaret, sağlık, ulaştırma, gıda, otomotiv, tekstil, teknoloji, kamu özel altyapı projeleri başta olmak üzere, farklı sektör ve ölçekte çok sayıda lider şirketin ihtiyaçlarına uygun hizmetler üreten çözüm ortağıdır.</p>
           </div>
           <div className="contImgB1">
             <img src={buildOffical2} alt="" />

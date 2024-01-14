@@ -170,45 +170,47 @@ const ServicePage = () => {
         </div>
         <div className="contServ">
             <div className="cs1">
-                <div className="cs1A">
-                    <ul>
-                        {services.map((item, index) => (
-                            <Link to={`${item.id}`} style={{textDecoration: "none"}} onClick={() => setSelectId(item.id)}><li key={index}>{item.name}</li></Link>
-                        ))}
-                    </ul>
+              <div className="cs1A">
+                <ul>
+                  {services.map((item, index) => (
+                    <Link to={`${item.id}`} style={{textDecoration: "none"}} onClick={() => setSelectId(item.id)}><li key={index}>{item.name}</li></Link>
+                  ))}
+                </ul>
+              </div>
+              <div className="cs1B">
+                <img src={callservice2} alt="" />
+                <h1>Detaylı Bilgi İçin Arayabilirsiniz</h1>
+                <span><CallIcon /></span>
+                <div className="pCont">
+                  <p className="p1">Sabit Hattımız</p>
+                  <p className="p2">444 01 01</p>
                 </div>
-                <div className="cs1B">
-                    <img src={callservice2} alt="" />
-                    <h1>Detaylı Bilgi İçin Arayabilirsiniz</h1>
-                    <span><CallIcon /></span>
-                    <p className="p1">Sabit Hattımız</p>
-                    <p className="p2">444 01 01</p>
-                </div>
+              </div>
             </div>
             <div className="cs2">
-                <div className="cs2A">
-                    {homeImages.map((image,index) => (
-                        <img
-                            key={index}
-                            className="homeImg"
-                            src={image.img}
-                            alt="yeminli mali müşsavir, ymm, ymm ankara, müşavir, musavir"
-                            style={{ opacity: index === currentState ? 0.7 : 0 }}
-                        />
-                    ))}
-                    <div className="hoverCt">
-                        <div className="hoverCont">
-                          <h1>MusEn YMM ve Danışmanlık A.Ş.</h1>
-                        </div>
-                    </div>
-                    <div className="arrows">
-                        <button onClick={clickArrowLeft} className="left"><ArrowBackIosNewIcon /></button>
-                        <button onClick={clickArrowRight} className="right"><ArrowBackIosNewIcon /></button>
-                    </div>
+              <div className="cs2A">
+                {homeImages.map((image,index) => (
+                  <img
+                    key={index}
+                    className="homeImg"
+                    src={image.img}
+                    alt="yeminli mali müşsavir, ymm, ymm ankara, müşavir, musavir"
+                    style={{ opacity: index === currentState ? 0.7 : 0 }}
+                  />
+                ))}
+                <div className="hoverCt">
+                  <div className="hoverCont">
+                    <h1>MusEn YMM ve Danışmanlık A.Ş.</h1>
+                  </div>
                 </div>
-                <div className="cs2B">
-                    {serviceId ? dosAll[serviceId - 1].compDos : <Dos1 />}
+                <div className="arrows">
+                  <button onClick={clickArrowLeft} className="left"><ArrowBackIosNewIcon /></button>
+                  <button onClick={clickArrowRight} className="right"><ArrowBackIosNewIcon /></button>
                 </div>
+              </div>
+              <div className="cs2B">
+                {serviceId ? dosAll[serviceId - 1].compDos : <Dos1 />}
+              </div>
             </div>
         </div>
     </div>

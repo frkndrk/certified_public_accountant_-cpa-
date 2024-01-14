@@ -18,7 +18,7 @@ const Footer = () => {
                 </div>
                 <div className="desc1">
                     <p>
-                    Dürüstlük ve güveni ilke edinen şirketimizin amacı; kurumsallaşma yolunda, ulusal ve uluslararası meslek etiğine bağlı, sürekli kendini yenileme ve yaşam boyu öğrenmenin gerekliliğine olan inançla müşterilerimizin ihtiyaçlarına en uygun profesyonel çözümleri zamanında sunmak ve müşterilerimizin çalışmalarına değer katmaktır.
+                        Dürüstlüğü, güvenirliliği, ulaşılabilirliği ve dinamizmi ilke edinen şirketimiz; müşterilerimize ve paydaşlarımıza hizmet vermeyi, sunmuş olduğumuz hizmetlerin kalitesinde evrensel düzeyi yakalamayı amaç edinmiştir.
                     </p>
                 </div>
             </div>
@@ -50,7 +50,7 @@ const Footer = () => {
                     <li><span><CallIcon /></span>
                         <div>
                             <p>Sabit Hattımız</p>
-                            <p>444 01 01</p>
+                            <p>0 554 358 25 38</p>
                         </div>
                     </li>
                     <li><span><EmailIcon /></span>
@@ -62,14 +62,14 @@ const Footer = () => {
                     <li><span><LocationOnIcon /></span>
                         <div>
                             <p>Ofis Adresimiz</p>
-                            <p>Mutlukent Mah. 2038.Sok. Çankaya/ANKARA</p>
+                            <p>Mutlukent Mah. 2038.Sok. No: 7 Çankaya/ANKARA</p>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
         <div className="designer">
-            <p><CopyrightIcon fontSize="small" style={{color: "#fff", marginRight: "5px"}} />Furkan Durak<LinkedInIcon fontSize="small" style={{marginLeft: "5px"}} /></p>
+            <a href="https://www.linkedin.com/in/frkndrk/" target="_blank" style={{textDecoration: "none"}}><p><CopyrightIcon fontSize="small" style={{color: "#fff", marginRight: "5px"}} />Furkan Durak<LinkedInIcon fontSize="small" style={{marginLeft: "5px"}} /></p></a>
         </div>
     </div>
   )

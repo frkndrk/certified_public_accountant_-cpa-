@@ -41,6 +41,7 @@
         align-items: center;
         width: 80%;
         height: 60vh;
+        min-height: 350px;
 
         @media (max-width: 930px) {
             height: auto;
@@ -137,6 +138,10 @@
                 flex-wrap: wrap;
                 margin-top: 50px;
 
+                @media (max-width: 930px) {
+                    margin-top: 20px;
+                }
+
                 .contCards2{
                     display: flex;
                     justify-content: center;
@@ -158,9 +163,16 @@
                         height: 300px * 0.5;
                     }
 
-                    @media (max-width: 487px) {
-                        width: 350px * 0.8;
-                        height: 300px * 0.8;
+                    @media (max-width: 488px) {
+                        width: 350px * 0.45;
+                        height: 300px * 0.45;
+                        margin: 5px;
+                    }
+
+                    @media (max-width: 418px) {
+                        width: 350px * 0.42;
+                        height: 300px * 0.42;
+                        margin: 2px;
                     }
             
                     .card2{
@@ -180,8 +192,12 @@
                             width: 350px * 0.5;
                         }
 
-                        @media (max-width: 487px) {
-                            width: 350px * 0.8;
+                        @media (max-width: 488px) {
+                            width: 350px * 0.45;
+                        }
+
+                        @media (max-width: 418px) {
+                            width: 350px * 0.42;
                         }
             
                         .contImg2{
@@ -198,9 +214,14 @@
                                 height: 250px * 0.5;
                             }
 
-                            @media (max-width: 487px) {
-                                width: 350px * 0.8;
-                                height: 250px * 0.8;
+                            @media (max-width: 488px) {
+                                width: 350px * 0.45;
+                                height: 250px * 0.45;
+                            }
+
+                            @media (max-width: 418px) {
+                                width: 350px * 0.42;
+                                height: 250px * 0.42;
                             }
             
                             img{
@@ -218,9 +239,13 @@
                                     height: 250px * 0.5;
                                 }
 
-                                @media (max-width: 487px) {
-                                    width: 350px * 0.8;
-                                    height: 250px * 0.8;
+                                @media (max-width: 488px) {
+                                    width: 350px * 0.45;
+                                    height: 250px * 0.45;
+                                }
+                                @media (max-width: 418px) {
+                                    width: 350px * 0.42;
+                                    height: 250px * 0.42;
                                 }
                             }
                         }
@@ -244,8 +269,12 @@
                                 margin-top: -30px;
                             }
 
-                            @media (max-width: 487px) {
-                                height: 100px * 0.7;
+                            @media (max-width: 488px) {
+                                height: 100px * 0.45;
+                            }
+
+                            @media (max-width: 418px) {
+                                height: 100px * 0.42;
                             }
 
                             h3{
@@ -262,9 +291,14 @@
                                     font-size: 25px * 0.5;
                                 }
 
-                                @media (max-width: 487px) {
-                                    padding-left: 20px * 0.8;
-                                    font-size: 25px * 0.8;
+                                @media (max-width: 488px) {
+                                    padding-left: 20px * 0.45;
+                                    font-size: 25px * 0.45;
+                                }
+
+                                @media (max-width: 418px) {
+                                    padding-left: 20px * 0.42;
+                                    font-size: 25px * 0.42;
                                 }
                             }
                         }
@@ -349,6 +383,10 @@
 
         @media (max-width: 830px) {
             margin-bottom: 100px;
+        }
+
+        @media (max-width: 662px) {
+            margin-top: 50px;
         }
 
         .description{
