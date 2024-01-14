@@ -15,6 +15,8 @@ import service8 from "../../assets/handShake3.webp"
 import shape from "../../assets/shape1.png"
 import handShake from "../../assets/handShake4.jpeg"
 import polkadots from "../../assets/polkadots.png"
+import logoWhite from "../../assets/logoWhite.png"
+import logoBlack from "../../assets/logoBlack.png"
 
 const AboutUs = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -82,8 +84,9 @@ const AboutUs = () => {
   return (
     <div className='aboutUs'>
       <div className="contHeader">
-        <span><AlignVerticalTopIcon /></span>
-        <h2>EnKa YMM</h2>
+        <div className="logoCont">
+          <img className="logo" src={logoBlack} alt=""></img>
+        </div>
         <h1>Hizmet Alanlarımız</h1>
       </div>
       <div className="container">

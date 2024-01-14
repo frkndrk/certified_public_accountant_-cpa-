@@ -4,6 +4,8 @@ import CallIcon from '@mui/icons-material/Call'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { Link } from "react-router-dom"
 import AlignVerticalTopIcon from '@mui/icons-material/AlignVerticalTop';
+import logoWhite from "../../assets/logoWhite.png"
+import logoBlack from "../../assets/logoBlack.png"
 
 const Navbar = () => {
 
@@ -24,9 +26,8 @@ const Navbar = () => {
   return (
     <div className={navbar ? "navbar active" : "navbar"} style={{position: navbar && "fixed", top: navbar && "0"}}>
       <div className="cont1">
-        <div className={navbar ? "logo fontColor" : "logo"}>
-          <span className={navbar && "fontColor"}><AlignVerticalTopIcon fontSize="medium"/></span>
-          <h1 className={navbar && "borderBottom"}><Link className="link" to="/Anasayfa">EnKa</Link></h1>
+        <div className="logoCont">
+          <Link to="/Anasayfa"><img className="logo" src={navbar ? `${logoWhite}` : `${logoBlack}`} alt=""></img></Link>
         </div>
         <div className="menu">
           <ul className="menuUl">

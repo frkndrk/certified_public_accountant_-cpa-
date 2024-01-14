@@ -1,10 +1,10 @@
 import "./officalPage.scss"
-import AlignVerticalTopIcon from '@mui/icons-material/AlignVerticalTop';
-
 import buildOffical2 from "../../assets/build8.jpeg"
 import hexagon from "../../assets/hexagon.png"
 import hands from "../../assets/hands.jpg"
-import plaza from "../../assets/plaza3.webp";
+import plaza from "../../assets/plaza3.webp"
+import logoWhite from "../../assets/logoWhite.png"
+import logoBlack from "../../assets/logoBlack.png"
 
 
 const OfficalPage = () => {
@@ -19,8 +19,9 @@ const OfficalPage = () => {
         </div>
         <div className="officalCont">
           <div className="contHeader">
-            <span><AlignVerticalTopIcon fontSize="small"/></span>
-            <h2>EnKa YMM</h2>
+            <div className="logoCont">
+              <img className="logo" src={logoBlack} alt=""></img>
+            </div>
             <h1>Hakkımızda</h1>
             <p>EnKa Yeminli Mali Müşavirlik hizmetlerinden Bağımsız Denetime, Muhasebe hizmetlerinden Mali Müşavirliğe, Sosyal Güvenlik Danışmanlığı hizmetlerinden Mesleki Eğitime kadar, geniş bir yelpazede müşterilerine hizmet vermektedir.</p>
             <p>Enka dürüstlüğü, güvenirliliği, ulaşılabilirliği ve dinamizmi ilke edinerek müşterilerimize ve paydaşlarımıza hizmet vermeyi , sunmuş olduğu hizmetlerin kalitesinde evrensel düzeyi yakalamayı amaç olarak belirlemiştir. Bu kapsamda genç, dinamik , vizyoner ve uzman kadrolarımız ile müşteri ve paydaşlarımızın ticari hayatlarına katma değer yaratarak hizmet vermeyi hedeflemektedir.</p>
