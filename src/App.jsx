@@ -10,6 +10,7 @@ import OfficalPage from './pages/officalPage/OfficalPage'
 import PartnersPage from './pages/partnersPage/PartnersPage'
 import ContactPage from './pages/contactPage/ContactPage'
 import ServicePage from './pages/servicePage/ServicePage'
+import FormPage from './pages/formPage/FormPage'
 
 function App() {
 
@@ -31,13 +32,13 @@ function App() {
         <Route path="/" element={<HomePage />}>
           <Route path="/Anasayfa" element={<HomePage />}/>
         </Route>
-        <Route path="/Hizmetlerimiz" element={<ServicesPage />}/>
         <Route path="/Kurumsal" element={<OfficalPage />}/>
         <Route path="/Ortaklarimiz" element={<PartnersPage />}/>
         <Route path="/Iletisim" element={<ContactPage />}/>
         <Route path="/Hizmetler" element={<ServicePage />}>
           <Route path=":serviceId" element={<ServicePage />} />
         </Route>
+        <Route path="/Teklif-Al" element={<FormPage />}/>
       </Routes>
       <Footer />
     </div>

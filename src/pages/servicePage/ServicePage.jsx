@@ -29,6 +29,8 @@ import callservice2 from "../../assets/callservice.jpg"
 
 const ServicePage = () => {
 
+  const [selectId, setSelectId ] = useState()
+
   const dosAll = [
     {
       id: 1,
@@ -162,7 +164,7 @@ const ServicePage = () => {
         <div className="imgContB1">
           <img src={plaza3} alt="" />
           <div className='textOff'>
-            <h1>{services[serviceId - 1].name}</h1>
+            <h1>{serviceId ? `${services[serviceId - 1].name}` : "Hizmetler"}</h1>
             <h2>Sizlere Hizmet Vermekten Mutluluk Duyuyoruz</h2>
           </div>
         </div>
@@ -171,7 +173,7 @@ const ServicePage = () => {
                 <div className="cs1A">
                     <ul>
                         {services.map((item, index) => (
-                            <Link to={`${item.id}`} style={{textDecoration: "none"}}><li key={index}>{item.name}</li></Link>
+                            <Link to={`${item.id}`} style={{textDecoration: "none"}} onClick={() => setSelectId(item.id)}><li key={index}>{item.name}</li></Link>
                         ))}
                     </ul>
                 </div>
@@ -205,7 +207,7 @@ const ServicePage = () => {
                     </div>
                 </div>
                 <div className="cs2B">
-                    {dosAll[serviceId - 1].compDos}
+                    {serviceId ? dosAll[serviceId - 1].compDos : <Dos1 />}
                 </div>
             </div>
         </div>

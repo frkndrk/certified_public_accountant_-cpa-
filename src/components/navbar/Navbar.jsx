@@ -37,7 +37,7 @@ const Navbar = () => {
                 <li style={{margin: "10px 20px", color: "rgba(59, 59, 61, 0.8)"}}><Link style={{height: "100%", display: "flex", justifyContent: "center", alignItems: "center"}} className="link" to="/Ortaklarimiz">Ortaklarımız</Link></li>
               </ul>
             </li>
-            <li className={navbar ? "menuLi fontColor" : "menuLi"}><Link style={{height: "100%", display: "flex", justifyContent: "center", alignItems: "center"}} className="link" to="/Hizmetlerimiz">Hizmetlerimiz</Link></li>
+            <li className={navbar ? "menuLi fontColor" : "menuLi"}><Link style={{height: "100%", display: "flex", justifyContent: "center", alignItems: "center"}} className="link" to="/Hizmetler">Hizmetlerimiz</Link></li>
             <li className={navbar ? "menuLi fontColor" : "menuLi"}><Link style={{height: "100%", display: "flex", justifyContent: "center", alignItems: "center"}} className="link" to="/Iletisim">İletişim</Link></li>
           </ul>
         </div>
