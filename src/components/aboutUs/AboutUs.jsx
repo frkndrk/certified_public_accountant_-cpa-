@@ -15,7 +15,6 @@ import service8 from "../../assets/handShake3.webp"
 import shape from "../../assets/shape1.png"
 import handShake from "../../assets/handShake4.jpeg"
 import polkadots from "../../assets/polkadots.png"
-import logoWhite from "../../assets/logoWhite.png"
 import logoBlack from "../../assets/logoBlack.png"
 
 const AboutUs = () => {
