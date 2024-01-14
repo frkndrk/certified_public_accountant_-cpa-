@@ -29,8 +29,6 @@ import callservice2 from "../../assets/callservice.jpg"
 
 const ServicePage = () => {
 
-  const [selectId, setSelectId ] = useState()
-
   const dosAll = [
     {
       id: 1,
@@ -162,7 +160,7 @@ const ServicePage = () => {
   return (
     <div className='servicePage'>
         <div className="imgContB1">
-          <img src={plaza3} alt="" />
+          <img src={plaza3} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi, kdv iade, danışmanlık" />
           <div className='textOff'>
             <h1>{serviceId ? `${services[serviceId - 1].name}` : "Hizmetler"}</h1>
             <h2>Sizlere Hizmet Vermekten Mutluluk Duyuyoruz</h2>
@@ -173,12 +171,12 @@ const ServicePage = () => {
               <div className="cs1A">
                 <ul>
                   {services.map((item, index) => (
-                    <Link to={`${item.id}`} style={{textDecoration: "none"}} onClick={() => setSelectId(item.id)}><li key={index}>{item.name}</li></Link>
+                    <Link to={`${item.id}`} style={{textDecoration: "none"}}><li key={index}>{item.name}</li></Link>
                   ))}
                 </ul>
               </div>
               <div className="cs1B">
-                <img src={callservice2} alt="" />
+                <img src={callservice2} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi, kdv iade, danışmanlık" />
                 <h1>Detaylı Bilgi İçin Arayabilirsiniz</h1>
                 <span><CallIcon /></span>
                 <div className="pCont">
@@ -194,7 +192,7 @@ const ServicePage = () => {
                     key={index}
                     className="homeImg"
                     src={image.img}
-                    alt="yeminli mali müşsavir, ymm, ymm ankara, müşavir, musavir"
+                    alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi, kdv iade, danışmanlık"
                     style={{ opacity: index === currentState ? 0.7 : 0 }}
                   />
                 ))}

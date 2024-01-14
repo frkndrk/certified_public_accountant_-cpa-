@@ -80,7 +80,7 @@ const Home = () => {
             key={index}
             className="homeImg1"
             src={image.img}
-            alt="yeminli mali müşsavir, ymm, ymm ankara, müşavir, musavir"
+            alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi , kdv iade , danışmanlık"
             style={{ opacity: index === currentState ? 0.5 : 0 }}
           />
         ))}
@@ -102,7 +102,7 @@ const Home = () => {
         ))}
       </div>
       <div className="shape2">
-        <img className="shapeImg" src={homeShape} alt="" />
+        <img className="shapeImg" src={homeShape} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi, kdv iade, danışmanlık" />
       </div>
       <div className="arrows">
         <button onClick={clickArrowLeft} className="left"><ArrowBackIosNewIcon /></button>

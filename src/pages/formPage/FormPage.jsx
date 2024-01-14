@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import AlignVerticalTopIcon from '@mui/icons-material/AlignVerticalTop';
 import "./formPage.scss"
-import buildOffical from "../../assets/build17.jpeg"
+import buildOffical from "../../assets/plaza11.jpg"
+import logoBlack from "../../assets/logoBlack.png"
 
 const FormPage = () => {
 
@@ -58,15 +59,16 @@ const FormPage = () => {
   return (
     <div className='formPage'>
         <div className="imgContB1">
-          <img src={buildOffical} alt="" />
+          <img src={buildOffical} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi, kdv iade, danışmanlık" />
           <div className='textOff'>
             <h1>İletişim</h1>
-            <h2>Danışmak istediğiniz sorularınız için aramaktan çekinmeyin</h2>
+            <h2>Danışmak istediğiniz sorularınız için lütfen arayın</h2>
           </div>
         </div>
         <div className="formCont3">
-          <span><AlignVerticalTopIcon /></span>
-          <h2>EnKa YMM</h2>
+          <div className="logoCont">
+            <img className="logo" src={logoBlack} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi, kdv iade, danışmanlık"></img>
+          </div>
           <h1>İletişim Formu</h1>
           <div className="form">
             <form onSubmit={handleClick}>

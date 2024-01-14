@@ -69,7 +69,7 @@ const ContactPage = () => {
   return (
     <div className='contactPage'>
         <div className="imgContB1">
-          <img src={buildOffical} alt="" />
+          <img src={buildOffical} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi, kdv iade, danışmanlık" />
           <div className='textOff'>
             <h1>İletişim</h1>
             <h2>Danışmak istediğiniz sorularınız için lütfen arayın</h2>
@@ -89,7 +89,7 @@ const ContactPage = () => {
               </iframe>
             </div>
             <div className="place">
-              <img src={buildImg} alt="" />
+              <img src={buildImg} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi, kdv iade, danışmanlık" />
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@ const ContactPage = () => {
               </div>
             </div>
             <div className="desc">
-              <img src={callservice} alt="" />
+              <img src={callservice} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi, kdv iade, danışmanlık" />
               <h2 className="descHeader">Detaylı bilgi almak için arayabilirsiniz.</h2>
             </div>
           </div>
@@ -131,7 +131,7 @@ const ContactPage = () => {
         </div>
         <div className="formCont3">
           <div className="logoCont">
-            <img className="logo" src={logoBlack} alt=""></img>
+            <img className="logo" src={logoBlack} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi, kdv iade, danışmanlık"></img>
           </div>
           <h1>İletişim Formu</h1>
           <div className="form">

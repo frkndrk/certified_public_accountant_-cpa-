@@ -85,7 +85,7 @@ const AboutUs = () => {
     <div className='aboutUs'>
       <div className="contHeader">
         <div className="logoCont">
-          <img className="logo" src={logoBlack} alt=""></img>
+          <img className="logo" src={logoBlack} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi , kdv iade , danışmanlık"></img>
         </div>
         <h1>Hizmet Alanlarımız</h1>
       </div>
@@ -96,7 +96,7 @@ const AboutUs = () => {
               <div key={item.id} className="contCards" style={{transform: `translateX(-${currentSlide * 370}px)`}}>
                 <div className="card">
                   <div className="contImg">
-                    <img src={item.img} alt=""/>
+                    <img src={item.img} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi , kdv iade , danışmanlık"/>
                   </div>
                   <div className="contName">
                     <h3>{item.name}</h3>
@@ -116,7 +116,7 @@ const AboutUs = () => {
               <div key={item.id} className="contCards2">
                 <div className="card2">
                   <div className="contImg2">
-                    <img src={item.img} alt=""/>
+                    <img src={item.img} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi , kdv iade , danışmanlık"/>
                   </div>
                   <div className="contName2">
                     <h3>{item.name}</h3>
@@ -153,9 +153,9 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="descImg">
-          <img className="desc2" src={shape} alt="" />
-          <img className="desc3" src={handShake} alt="" />
-          <img className="desc4" src={polkadots} alt="" />
+          <img className="desc2" src={shape} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi , kdv iade , danışmanlık" />
+          <img className="desc3" src={handShake} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi , kdv iade , danışmanlık" />
+          <img className="desc4" src={polkadots} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi , kdv iade , danışmanlık" />
         </div>
       </div>
       <div className="contA1">
@@ -171,19 +171,3 @@ const AboutUs = () => {
 }
 
 export default AboutUs
-
-/* useEffect(() => {
-  if(window.innerWidth <= 930) {
-    setNavbar(true);
-  } else {
-    setNavbar(false)
-    const timer = setTimeout(() => {
-      if(currentSlide === 5) {
-        setCurrentSlide(0)
-      } else {
-        setCurrentSlide(currentSlide + 1)
-      }
-    }, 5000)
-    return () => clearTimeout(timer)
-  }
-},[currentSlide]) */

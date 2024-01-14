@@ -6,7 +6,7 @@ const PartnersPage = () => {
   return (
     <div className="partnersPage">
         <div className="imgContB1">
-          <img src={plazaPP} alt="" />
+          <img src={plazaPP} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi, kdv iade, danışmanlık" />
           <div className='textOff'>
             <h1>Ortaklarımız</h1>
             <h2>Sizlere Hizmet Vermekten Mutluluk Duyuyoruz</h2>
@@ -17,7 +17,7 @@ const PartnersPage = () => {
                 <div className="infoA1">
                     <div className="names">
                       <h1>Enes Karakurt</h1>
-                      <h3>Kurucu Ortak, YMM, Bağımsız Denetçi</h3>
+                      <h3>Kurucu Ortak, YMM</h3>
                     </div>
                     <div className="cvInfo">
                       <p>1989 yılında Samsunda doğan Enes KARAKURT orta öğrenimini Samsunda tamamladıktan sonra İstanbul Üniversitesi İktisat fakültesi Ekonometri bölümünden 2012 yılında mezun olmuştur. Ondokuzmayıs Üniversite Lisansüstü Eğitim Enstitüsü İktisat Anabilim Dalında yüksek lisans öğrenimine devam etmektedir.</p>
@@ -28,7 +28,7 @@ const PartnersPage = () => {
                 </div>
             </div>
             <div className="infoImg">
-                <img src={profile} alt="" />
+                <img src={profile} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi, kdv iade, danışmanlık" />
             </div>
         </div>
     </div>

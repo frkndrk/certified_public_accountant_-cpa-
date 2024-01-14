@@ -27,7 +27,7 @@ const Navbar = () => {
     <div className={navbar ? "navbar active" : "navbar"} style={{position: navbar && "fixed", top: navbar && "0"}}>
       <div className="cont1">
         <div className="logoCont">
-          <Link to="/Anasayfa"><img className="logo" src={navbar ? `${logoWhite}` : `${logoBlack}`} alt=""></img></Link>
+          <Link to="/Anasayfa"><img className="logo" src={navbar ? `${logoWhite}` : `${logoBlack}`} alt="Enka, enkaymm, Enka YMM, enka ymm, Enka Ymm, enes karakurt, Enes Karakurt, Enes Karakurt YMM, Enes Karakurt Ymm, Enes Karakurt Yeminli Mali Müşavir, ymm, YMM, Ymm, Yeminli, Mali, Müşavir, Yeminli Mali Müşavir, Musavir, Ankara Ymm, Ankara Yeminli Mali Müşavir, Ankara enka, ankara enka, Ankara Enka, Tasdik, Denetim, İade, iade, vergi incelemesi , vergi danışmanlığı, Vergi, vergi iadesi, kdv iade, danışmanlık"></img></Link>
         </div>
         <div className="menu">
           <ul className="menuUl">
