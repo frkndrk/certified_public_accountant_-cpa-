@@ -29,7 +29,7 @@ const Footer = () => {
                 <ul className="menu1 mn">
                     <Link className="link" to="/Anasayfa"><li>Anasayfa</li></Link>
                     <Link className="link" to="/Kurumsal"><li>Kurumsal</li></Link>
-                    <Link className="link" to="/Hizmetlerimiz"><li>Hizmetlerimiz</li></Link>
+                    <Link className="link" to="/Hizmetler"><li>Hizmetlerimiz</li></Link>
                     <Link className="link" to="/Iletisim"><li>İletişim</li></Link>
                 </ul>
             </div>
