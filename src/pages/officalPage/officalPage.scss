@@ -96,6 +96,8 @@
             flex-direction: column;
         }
 
+
+
         .contHeader{
             flex: 1;
             display: flex;
@@ -104,6 +106,10 @@
             flex-direction: column;
             margin-bottom: 100px;
             margin-right: 10px;
+
+            @media (max-width: 830px) {
+                margin-bottom: 50px;
+            }
 
             .logoCont{
                 color: #000000;
@@ -166,7 +172,7 @@
 
         }
 
-        .contImgB1{
+        /* .contImgB1{
             flex: 1;
             display: flex;
             justify-content: center;
@@ -190,7 +196,7 @@
                     height: auto;
                 }
             }
-        }
+        } */
     }
 
     .contB1{
@@ -200,7 +206,7 @@
         width: 80%;
         height: 70vh;
         background-color: rgba(56, 55, 55, 0.9);
-        margin: 100px 0;
+        margin-bottom: 100px;
         border-radius: 0px;
         position: relative;
         overflow: hidden;
