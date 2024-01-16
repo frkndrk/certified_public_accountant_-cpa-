@@ -95,6 +95,7 @@
         box-shadow: 0 0 10px 1px #aaa;
         min-width: 370px;
         min-height: 580px;
+        max-height: 600px;
 
         @media (max-width: 780px) {
             width: 80%;
