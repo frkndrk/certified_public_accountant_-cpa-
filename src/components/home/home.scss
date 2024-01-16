@@ -61,6 +61,24 @@
         left: 70px;
         z-index: 1;
 
+        
+
+        @media (min-width: 1500px) {
+            left: 100px;
+        }
+
+        @media (min-width: 1600px) {
+            left: 200px;
+        }
+
+        @media (min-width: 1700px) {
+            left: 250px;
+        }
+
+        @media (min-width: 1800px) {
+            left: 350px;
+        }
+
         @media (max-width: 930px) {
             width: 80%;
         }
