@@ -185,6 +185,11 @@
                         font-size: 15px;
                         margin-bottom: 10px;
 
+                        @media (min-width: 1400px) {
+                            line-height: 30px;
+                            font-size: 20px;
+                        }
+
                         @media (max-width: 1350px) {
                             font-size: 13px;
                             margin-bottom: 5px;
@@ -201,7 +206,7 @@
 
                         @media (max-width: 421px) {
                             line-height: 18px;
-                        } 
+                        }
                     }
                 }
 
